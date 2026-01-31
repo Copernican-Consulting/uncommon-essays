@@ -1,0 +1,643 @@
+[
+  {
+    "name": "Princeton",
+    "must_hit_signals": [
+      "Intellectual curiosity + academic excellence as lived behavior",
+      "Show curiosity as actions: self-driven reading, projects, questions pursued, mentors sought, experiments tried (not just “I love learning”). Princeton explicitly emphasizes intellectual curiosity and academic excellence.",
+      "Your voice and values",
+      "Your essays should “sound like you,” not like a composite of advice. Princeton prompts and guidance strongly emphasize conveying ideas in your own voice.",
+      "Fit through specifics",
+      "Use at least one response to connect your curiosity to Princeton’s learning environment/resources (specific programs, approaches, communities)."
+    ],
+    "common_failure_modes": [
+      "Prestige tourism: “Princeton is world-class” without clear personal intellectual trajectory.",
+      "“Perfect person” syndrome: a flawlessly curated résumé in prose with no interiority.",
+      "Overly grand mission statements that never get concrete."
+    ],
+    "tone_guidance": [
+      "Thoughtful + precise + reflective, with a calm confidence.",
+      "Let your sophistication come from clarity of thinking, not ornate language."
+    ],
+    "subject_matter_guidance": [
+      "Strong topics often look like:",
+      "A specific “intellectual pull” (a question you can’t stop poking at) + what you did about it",
+      "A meaningful commitment outside class that shaped your lens (community, family responsibility, craft)",
+      "Avoid essays that are basically “leadership highlight reels.”"
+    ],
+    "overall_guidance": "Princeton wants to see a serious mind + a real person: someone who will use rigorous academics well and contribute meaningfully beyond them."
+  },
+  {
+    "name": "MIT",
+    "must_hit_signals": [
+      "Authenticity over polish",
+      "MIT is explicit: this is not a writing test; they want you honest, open, authentic—an opportunity to connect.",
+      "Maker / problem-solver energy",
+      "Show how you operate when you’re building, debugging, iterating, collaborating, or learning something hard (even outside STEM).",
+      "Many short answers = many facets",
+      "MIT’s format (several short responses) is designed to build a multidimensional picture of you."
+    ],
+    "common_failure_modes": [
+      "Over-engineered prose (trying to sound literary) instead of being direct and real.",
+      "Vague “I love science” without showing what you do.",
+      "Performative quirk (“random” for the sake of it) that doesn’t connect to who you are."
+    ],
+    "tone_guidance": [
+      "Direct, human, candid.",
+      "“Specific beats impressive.” Short, concrete sentences are your friend."
+    ],
+    "subject_matter_guidance": [
+      "Great MIT material includes:",
+      "A build/project/process story (with constraints, tradeoffs, iteration)",
+      "A collaboration story (how you handle disagreement, division of labor, failure)",
+      "A curiosity story that shows you going beyond what was assigned",
+      "MIT-friendly essays often include tiny technical details only when they illuminate your thinking."
+    ],
+    "overall_guidance": "Your packet should scream: I do things, I learn fast, I’m genuinely me, and I’ll thrive in a hands-on, intense community."
+  },
+  {
+    "name": "Harvard",
+    "must_hit_signals": [
+      "Write what you actually care about",
+      "Harvard explicitly encourages writing about something you care about rather than what you think admissions wants; topics needn’t be exotic to be compelling.",
+      "Personal voice",
+      "Harvard frames the essay as the place to share what you choose—your story, priorities, and perspective.",
+      "Breadth of contribution (in a believable way)",
+      "Show how you engage with ideas and people—your way of being in communities."
+    ],
+    "common_failure_modes": [
+      "Trying to “sound Harvard” (grandiose, name-droppy, over-intellectualized).",
+      "Résumé repetition: re-listing achievements with no insight.",
+      "Trauma essay without reflection: hardship described, but meaning/agency unclear."
+    ],
+    "tone_guidance": [
+      "Warm, clear, self-aware.",
+      "Smart is fine; human is mandatory."
+    ],
+    "subject_matter_guidance": [
+      "Excellent Harvard topics often involve:",
+      "A tension or question you’ve wrestled with",
+      "A genuine interest pursued beyond school structure",
+      "A personal corner of life that reveals your values (small can be powerful if specific)",
+      "If you write about something impressive, the key is what it says about how your mind works."
+    ],
+    "overall_guidance": "Aim for: a vivid person with intellectual energy and a grounded sense of meaning—not a “perfect applicant.”"
+  },
+  {
+    "name": "Stanford",
+    "must_hit_signals": [
+      "Holistic “grow, contribute, thrive” story",
+      "Stanford explicitly says holistic review is integrated; they want to learn how you would grow, contribute, and thrive there.",
+      "Strong short-form execution",
+      "Stanford’s application includes multiple short questions and short essays; they care whether you can be specific and revealing in tight space.",
+      "Values-in-action",
+      "Show what you do, what you notice, what you choose, and why."
+    ],
+    "common_failure_modes": [
+      "“Impact” cosplay: inflated claims about changing the world with little evidence.",
+      "Generic leadership tropes (teamwork! perseverance!) without scene + detail.",
+      "Answering prompts like interview questions (dry, bullet-y) instead of small narrative moments."
+    ],
+    "tone_guidance": [
+      "Optimistic, thoughtful, crisp.",
+      "For short answers: punchy specificity > explanation."
+    ],
+    "subject_matter_guidance": [
+      "Stanford prompts reward:",
+      "Quirky-but-real details",
+      "Moments that reveal your priorities",
+      "A clear sense of “what you’re about” (curiosity, craft, service, creation)",
+      "Use at least one response to show how you contribute to culture, not just accomplishments."
+    ],
+    "overall_guidance": "The total set should feel like: an interesting, energetic person who will add to campus life and chase learning hard—with humility."
+  },
+  {
+    "name": "Yale",
+    "must_hit_signals": [
+      "Your own voice, openly and honestly",
+      "Yale is very direct: write about what matters to you; use your own voice; don’t force impressive vocabulary or complexity.",
+      "Community contribution + resource-use",
+      "Yale frames evaluation around who will make the most of Yale’s resources and contribute most to the community.",
+      "Intellectual excitement (with sincerity)",
+      "Show what genuinely lights you up and why."
+    ],
+    "common_failure_modes": [
+      "Overly “crafted” voice that doesn’t sound like a real 17/18-year-old human.",
+      "Pretentious intellectualism (big ideas, no lived stake).",
+      "Performative activism without evidence of sustained engagement or learning."
+    ],
+    "tone_guidance": [
+      "Straightforward, reflective, conversationally intelligent.",
+      "Yale practically begs you: don’t overwrite."
+    ],
+    "subject_matter_guidance": [
+      "Great Yale topics often:",
+      "Show you as someone others want in a residential community",
+      "Include curiosity + dialogue + humility",
+      "Reveal how you handle complexity and disagreement respectfully (fits their community ethos)"
+    ],
+    "overall_guidance": "Your application should read like: a real thinker who also builds healthy community, and will actively use Yale’s opportunities."
+  },
+  {
+    "name": "University of Chicago",
+    "must_hit_signals": [
+      "Playful, rigorous thinking",
+      "UChicago’s prompts are explicitly meant to encourage applicants to think beyond traditional conventions and express themselves creatively.",
+      "Intellectual personality",
+      "They want to see your mind move: curious leaps, precise logic, weird connections, and self-aware humor.",
+      "“Why UChicago” with real fit",
+      "Their required essay asks how UChicago satisfies your desire for a particular kind of learning/community/future."
+    ],
+    "common_failure_modes": [
+      "Trying to be quirky without substance (randomness ≠ creativity).",
+      "Writing a parody that never shows what you value intellectually.",
+      "“Why UChicago” that’s actually “why a top school.” (No specific academic/cultural fit.)"
+    ],
+    "tone_guidance": [
+      "Confidently weird (if you are), but always lucid.",
+      "Your best tone is often: clever + precise + sincere."
+    ],
+    "subject_matter_guidance": [
+      "Strong approaches:",
+      "Take a surprising question seriously and pursue it with real reasoning",
+      "Use structure creatively (dialogue, footnotes, theorem/proof, etc.) only if it serves clarity",
+      "If you do satire, it must still reveal real thinking + real values."
+    ],
+    "overall_guidance": "UChicago essays should leave the reader thinking: “This person is fun to talk to at 1am—and also sharp.”"
+  },
+  {
+    "name": "Duke",
+    "must_hit_signals": [
+      "Personal + specific",
+      "Duke explicitly says these questions let you share more about your personal background and academic interests.",
+      "A strong “Why Duke”",
+      "Duke calls out the required short essay: “Tell us your ‘Why Duke’.”",
+      "Community contribution",
+      "Duke’s prompts emphasize viewpoints/experiences and potential contributions to a vibrant community."
+    ],
+    "common_failure_modes": [
+      "Generic “Why Duke” (location, rankings, “collaborative community” with no proof).",
+      "Name-dropping programs without connecting them to your past actions and future direction.",
+      "Overly sanitized personality: Duke wants energy and presence."
+    ],
+    "tone_guidance": [
+      "Upbeat, grounded, personable.",
+      "Duke tolerates a bit more “rah-rah” than some peers, but it must be earned by specifics."
+    ],
+    "subject_matter_guidance": [
+      "“Why Duke” should connect:",
+      "what you’ve already done / loved → what Duke uniquely enables → how you’ll show up there",
+      "Their short prompts are great for:",
+      "A meaningful disagreement handled well",
+      "A recent genuine excitement that reveals curiosity, taste, or initiative"
+    ],
+    "overall_guidance": "Duke wants to picture you as a high-engagement community member with clear academic curiosity and a social presence."
+  },
+  {
+    "name": "Johns Hopkins",
+    "must_hit_signals": [
+      "“Spirit of exploration” + what excites you",
+      "Hopkins frames the supplemental as a chance to show what excites you and how you’d enrich their community—explicitly tying it to a “spirit of exploration.”",
+      "Academic character",
+      "Hopkins highlights “academic character”: how you pursue academics, contribute to learning environments, and engage beyond the classroom.",
+      "Impact and initiative (without hype)",
+      "Show initiative in a way that’s specific and sustained (research, service, building, mentoring, organizing)."
+    ],
+    "common_failure_modes": [
+      "Premed cliché script (medicine-as-hero narrative) with no nuance or specificity.",
+      "Research name-drop without describing your thinking, role, and learning.",
+      "Hyper-competitive vibe: Hopkins likes drive, not arrogance."
+    ],
+    "tone_guidance": [
+      "Curious, earnest, intellectually alive.",
+      "Your strongest tone is often: “Here’s what I’m exploring and why it matters to me.”"
+    ],
+    "subject_matter_guidance": [
+      "Good Hopkins subjects:",
+      "A first/proud milestone (big or small) that shaped your trajectory",
+      "A curiosity thread you’ve pursued beyond class",
+      "A community contribution story where you learned something real",
+      "“Show the lab notebook” energy: constraints, iteration, learning."
+    ],
+    "overall_guidance": "Make them believe you’re a deep learner + active explorer who will add to a research-driven community."
+  },
+  {
+    "name": "Northwestern",
+    "must_hit_signals": [
+      "They’re imagining who you’ll become at NU",
+      "Northwestern says their writing supplements help them understand your experiences and imagine what kind of Northwestern student you may become.",
+      "Coherence across experiences",
+      "Essays should connect the dots: the through-line that predicts how you’ll engage on campus.",
+      "Context + contribution",
+      "Help them see how your environment shaped you and what you’ll bring."
+    ],
+    "common_failure_modes": [
+      "Disjointed identity collage (many “interesting” fragments, no through-line).",
+      "Vague “fit” (city, journalism, “great programs”) with no personal grounding.",
+      "Recycled essay that doesn’t answer the prompt’s intention (repurposing is allowed, but it still has to land)."
+    ],
+    "tone_guidance": [
+      "Friendly, narrative, specific.",
+      "Less “audition,” more “here’s the story of how I got here and what I’ll do next.”"
+    ],
+    "subject_matter_guidance": [
+      "Northwestern essays do well when they:",
+      "highlight interdisciplinary curiosity (in a concrete way)",
+      "show social intelligence (how you join groups, build relationships, lead with empathy)",
+      "include “micro-scenes” that make you memorable"
+    ],
+    "overall_guidance": "Your goal: make admissions confidently say, “Yes—this person will thrive here and make the community better.”"
+  },
+  {
+    "name": "University of Pennsylvania",
+    "must_hit_signals": [
+      "Writing as a window into your mind and values",
+      "Penn explicitly: your writing shows how you think, what you value, and how you see the world; they read your words carefully.",
+      "Agency",
+      "Penn underscores that you choose what to tell them—this is your story and perspective.",
+      "Fit with Penn’s “doer” culture (through evidence)",
+      "Penn’s prompts typically reward people who execute—turn interests into projects, initiatives, communities, or real-world application (the “show what you do” vibe)."
+    ],
+    "common_failure_modes": [
+      "Business-bro vibes (overly transactional, prestige/status language).",
+      "Generic “I love interdisciplinary learning” without grounding in actions.",
+      "Over-optimized writing that feels consultant-y rather than personal."
+    ],
+    "tone_guidance": [
+      "Clear, energetic, self-aware.",
+      "Let ambition show, but pair it with humility and real motivations."
+    ],
+    "subject_matter_guidance": [
+      "Penn-friendly topics often:",
+      "show applied curiosity (building, launching, organizing, researching, serving)",
+      "reveal values through choices (what you prioritize, what you refuse, what you commit to)",
+      "include at least one “community lens” (how you’ll participate and contribute)"
+    ],
+    "overall_guidance": "The full set should read like: a thoughtful doer with a distinct perspective—someone who will use Penn’s resources actively and contribute voice and creativity. If you want a practical next step Pick one school and paste: the prompt(s) you’re targeting, and a rough bullet outline of your intended story …and I’ll rewrite it into a must-hit checklist + a draft structure that matches that school’s signals and avoids the failure modes. Please expand the list to the next 20 schools.  Any publicly available ranking is fine, the ranking is less important than getting approximately the right list and having a well researched profile for each.  Please use the same format/template you just used for the top 10. Thought for 5m 48s Below are 20 additional highly selective U.S. schools (roughly the next set after a top-10, using a publicly available summary of the U.S. News National Universities list)."
+  },
+  {
+    "name": "Caltech",
+    "must_hit_signals": [
+      "You’re genuinely “STEM-driven” now (current projects/questions > childhood origin story).",
+      "Fit with Caltech’s core traits: love of math, passion for chemistry/physics, resilience, collaboration, creativity, inclusivity.",
+      "You can communicate in writing with clarity and personality (Caltech treats supplements as your “direct voice” since there’s no interview)."
+    ],
+    "common_failure_modes": [
+      "Trying to “balance” by downplaying STEM—Caltech explicitly encourages leaning into the STEMiest topics.",
+      "Vague “I love science” with no evidence of how you pursue questions, iterate, or collaborate.",
+      "Low reflection: describing achievements without the why / what you learned / what you’d do next."
+    ],
+    "tone_guidance": [
+      "Curious, specific, technically comfortable without trying to sound like a journal article.",
+      "Confident about what excites you; humble about what you don’t know yet."
+    ],
+    "subject_matter_guidance": [
+      "Research experiences, problem sets/projects you pushed through, build/experiment loops, teamwork under pressure.",
+      "Any non-STEM angle should still connect to how you think, write, and analyze (Caltech values humanities/social sciences too)."
+    ],
+    "overall_guidance": "Pick 2–3 “through-lines” (e.g., a scientific obsession + a maker habit + collaborative style) and make every essay reinforce them with different evidence."
+  },
+  {
+    "name": "Cornell",
+    "must_hit_signals": [
+      "Clear fit for Cornell overall + your specific college/school (Cornell explicitly evaluates “reasons for Cornell” and “reasons for the specific college/school”).",
+      "Personal qualities Cornell calls out: character (honesty, empathy, collaboration), intellectual potential, involvement/community engagement.",
+      "You answer their “community” framing with real specificity (Cornell’s university-level supplement is explicitly community-based)."
+    ],
+    "common_failure_modes": [
+      "Generic “Why Cornell” without naming what you’ll do there (programs, approach, communities) and how it matches your trajectory.",
+      "Re-listing your resume instead of showing values, motivations, and decision logic."
+    ],
+    "tone_guidance": [
+      "Warm + concrete. Cornell is signaling “voice/values/story” more than a “perfect” kind of story."
+    ],
+    "subject_matter_guidance": [
+      "University essay: identity and growth through a community.",
+      "College-specific essays: demonstrate informed intent (why this college, why this major, what you’ll contribute)."
+    ],
+    "overall_guidance": "Treat Cornell as two fits: ("
+  },
+  {
+    "name": "Brown",
+    "must_hit_signals": [
+      "You thrive with freedom: intellectual self-direction + ownership of learning (Brown’s essays are explicitly structured around pursuing interests via the Open Curriculum and “Why Brown”).",
+      "You’ll contribute to a community, not just consume opportunities (Brown’s supplement set routinely includes community/joy/curiosity style prompts).",
+      "Context awareness: you used your resources well and can explain how you’ll flourish with Brown’s model."
+    ],
+    "common_failure_modes": [
+      "Name-dropping Open Curriculum without showing what you’d do with it (specific explorations, combinations, questions).",
+      "“Quirky” for its own sake (Brown likes genuine voice; forced eccentricity reads performative)."
+    ],
+    "tone_guidance": [
+      "Thoughtful, exploratory, human. Show agency: “here’s how I design my learning.”"
+    ],
+    "subject_matter_guidance": [
+      "Interdisciplinary curiosity, “create your own path” learning stories, communities you build, and what reliably brings out your best work (often what “joy” prompts are probing)."
+    ],
+    "overall_guidance": "Your essays should feel like a student already living the Open Curriculum: choices, tradeoffs, and intellectual play—grounded in real action."
+  },
+  {
+    "name": "Dartmouth",
+    "must_hit_signals": [
+      "Authentic voice: Dartmouth explicitly frames memorable essays as the writer’s authentic story.",
+      "Fit with a close, participatory community (the “why here / why you” match matters a lot at small residential schools)."
+    ],
+    "common_failure_modes": [
+      "Polished-but-generic “leadership narrative” that could be pasted anywhere.",
+      "Overwriting: too many themes, not enough “one clear person.”"
+    ],
+    "tone_guidance": [
+      "Direct, personal, lightly reflective; prioritize clarity over ornament."
+    ],
+    "subject_matter_guidance": [
+      "Defining relationships/communities, outdoor/adventure or intense collaboration experiences if real, moments you changed your mind, learned, or rebuilt."
+    ],
+    "overall_guidance": "Make the reader feel they’ve met you—then show how that person strengthens a tight-knit campus."
+  },
+  {
+    "name": "Columbia",
+    "must_hit_signals": [
+      "Evidence of intellectual curiosity + active engagement with ideas (Columbia explicitly asks Columbia-specific questions, and their process messaging emphasizes academic/intellectual qualities).",
+      "Strong “in-New-York” fit: you can articulate how you’ll use location + community for learning and impact (implied by Columbia’s long-standing “city as classroom” model; treat this as a must-prove, not a slogan)."
+    ],
+    "common_failure_modes": [
+      "“Core Curriculum is great” with no demonstration of how you debate, read, and build arguments.",
+      "List answers (books/media) that look engineered for prestige rather than genuine intellectual life."
+    ],
+    "tone_guidance": [
+      "Smart but not showy. Let the substance carry."
+    ],
+    "subject_matter_guidance": [
+      "Your reading/idea life, formative questions, civic/urban engagement, academic direction that benefits from Columbia’s structure and New York exposure."
+    ],
+    "overall_guidance": "Columbia essays win when they show you already live like a Columbia student: you pursue ideas seriously and publicly."
+  },
+  {
+    "name": "UC Berkeley",
+    "must_hit_signals": [
+      "Berkeley’s holistic review explicitly weighs academic + non-academic with no pre-assigned weights, including personal qualities like initiative, originality, intellectual independence, maturity, concern for others/community.",
+      "You’ll contribute to Berkeley’s intellectual and cultural vitality.",
+      "PIQs should make the student “come through” as an individual (Berkeley explicitly considers personal insight responses among key factors)."
+    ],
+    "common_failure_modes": [
+      "PIQs that are all résumé—no insight into personal qualities, motivations, or growth.",
+      "“Hardship essay” that stops at adversity instead of showing maturity/insight in response."
+    ],
+    "tone_guidance": [
+      "Clear, grounded, reflective. Show earned confidence and concrete impact."
+    ],
+    "subject_matter_guidance": [
+      "Initiative, leadership, intellectual curiosity, sustained commitment, community contribution; explain context and constraints (Berkeley explicitly reads achievement “in context of opportunities”)."
+    ],
+    "overall_guidance": "PIQs should function like evidence exhibits for Berkeley’s stated personal qualities + contributions—not like a generic personal narrative."
+  },
+  {
+    "name": "Rice",
+    "must_hit_signals": [
+      "Deep “fit” with Rice’s culture: collaborative, community-oriented, and specific (Rice’s application materials explicitly push you toward authentic detail—e.g., The Box and short answers).",
+      "You can show personality quickly and memorably (Rice prompts are designed to surface distinctiveness)."
+    ],
+    "common_failure_modes": [
+      "Treating Rice like a generic elite school—no mention of residential college culture, collaborative learning style, or the lived student experience.",
+      "Overly formal tone that drains the “human” out of the short answers."
+    ],
+    "tone_guidance": [
+      "Crisp, vivid, unpretentious. Short answers should sound like you, not like marketing copy."
+    ],
+    "subject_matter_guidance": [
+      "Community traditions you’d join/build, the kind of peer environment you thrive in, a genuine “why Rice” rooted in academics + culture."
+    ],
+    "overall_guidance": "Rice essays should read like a future Rice residential-college citizen: you contribute, you collaborate, you show up."
+  },
+  {
+    "name": "UCLA",
+    "must_hit_signals": [
+      "UCLA explicitly looks for intellectual curiosity and interest in personal development, and applicants who’ll contribute to UCLA’s intellectual vitality, cultural life, and diversity.",
+      "PIQs should clearly reveal personal qualities (UCLA’s review criteria include character, initiative, creativity, leadership, etc., and PIQs are explicitly part of the evidence set)."
+    ],
+    "common_failure_modes": [
+      "Clichés, careless humor, or unfocused answers (UCLA explicitly warns about humor/clichés and urges clarity/focus/organization).",
+      "Trauma-dumping without insight: UCLA explicitly notes difficulty alone isn’t effective without showing qualities and growth."
+    ],
+    "tone_guidance": [
+      "Open, reflective, organized; “show me who you are now” with specific examples."
+    ],
+    "subject_matter_guidance": [
+      "Recent examples, concrete actions, and clear reflection on direction/goals (UCLA encourages focusing on recent events that show who you are right now)."
+    ],
+    "overall_guidance": "UCLA PIQs win by being legible: clear narrative spine + vivid evidence of qualities UCLA names."
+  },
+  {
+    "name": "Vanderbilt",
+    "must_hit_signals": [
+      "Authenticity + specificity: Vanderbilt’s admissions advice emphasizes being yourself and making the essay uniquely yours (not what you think they want).",
+      "Demonstrated curiosity/initiative and real engagement (show how you learn, lead, and contribute)."
+    ],
+    "common_failure_modes": [
+      "Prestige-signaling: “I want Vanderbilt because it’s top-ranked” (reads shallow anywhere, but especially at schools pushing authenticity).",
+      "Over-polished “perfect student” persona with no texture."
+    ],
+    "tone_guidance": [
+      "Smart, candid, warm; use detail that only you could write."
+    ],
+    "subject_matter_guidance": [
+      "Core commitments (what you actually do repeatedly), moments you built community, and concrete “why here” fit if asked."
+    ],
+    "overall_guidance": "Your job is to make the reader trust you as a real human—and then show how that human changes Vanderbilt for the better."
+  },
+  {
+    "name": "Carnegie Mellon (CMU)",
+    "must_hit_signals": [
+      "Fit for CMU’s academic intensity and (often) program/college specificity—CMU emphasizes college/school context in review and requirements.",
+      "Evidence you’re a builder/problem-solver: projects, iteration, rigor, and the “how” of your work."
+    ],
+    "common_failure_modes": [
+      "Generic passion statements with no demonstrated making/doing.",
+      "Misalignment with the program: essays that don’t match the major/college you chose."
+    ],
+    "tone_guidance": [
+      "Clear, practical, evidence-forward (CMU readers expect competence and specificity)."
+    ],
+    "subject_matter_guidance": [
+      "Technical/artistic projects, collaboration under constraints, why your intended program is the right toolset for your goals."
+    ],
+    "overall_guidance": "CMU essays should read like an engineer/designer/artist explaining their process—human, but deeply concrete."
+  },
+  {
+    "name": "University of Michigan",
+    "must_hit_signals": [
+      "You can articulate your identity/values + how you’ll engage Michigan’s community (Michigan’s prompts explicitly probe community and personal perspective).",
+      "Resource fluency: you know what you’d do at Michigan (clubs/labs/programs/campus culture) and why it fits your trajectory."
+    ],
+    "common_failure_modes": [
+      "Trying to cover “everything I’ve done” instead of one or two telling choices.",
+      "“Why Michigan” that could be swapped with any Big Ten school."
+    ],
+    "tone_guidance": [
+      "Energetic, direct, Midwest-friendly sincerity; avoid corporate polish."
+    ],
+    "subject_matter_guidance": [
+      "Community building, intellectual curiosity, and specific “Michigan moments” that connect to your goals."
+    ],
+    "overall_guidance": "Michigan rewards applicants who feel ready to participate: you don’t just attend, you join and build."
+  },
+  {
+    "name": "University of Notre Dame",
+    "must_hit_signals": [
+      "Essays should demonstrate character and purpose consistent with Notre Dame’s community-and-values orientation (use ND’s published evaluation/criteria and prompts as your map).",
+      "Service/commitment is strongest when it’s sustained and personal—not performative."
+    ],
+    "common_failure_modes": [
+      "“Service résumé” (hours + organizations) without motivations, relationships, or what changed in you.",
+      "Values talk that sounds borrowed rather than lived."
+    ],
+    "tone_guidance": [
+      "Earnest, humble, grounded; avoid cynicism or snark."
+    ],
+    "subject_matter_guidance": [
+      "Faith can be part of your story if real, but the bigger win is showing integrity, care for others, and a coherent moral center."
+    ],
+    "overall_guidance": "Notre Dame essays tend to shine when they show you’ll elevate the community’s spirit and substance—not just its stats."
+  },
+  {
+    "name": "Washington University in St. Louis (WashU)",
+    "must_hit_signals": [
+      "Intellectual curiosity + exploration (WashU explicitly signals what it’s looking for and offers optional ways to show voice—writing/video).",
+      "A credible “why WashU” that connects to interdisciplinary opportunity and the way you learn."
+    ],
+    "common_failure_modes": [
+      "Optional supplements used to repeat the same story rather than add dimension.",
+      "“Perfectly safe” essays that never reveal what you truly care about."
+    ],
+    "tone_guidance": [
+      "Clear, personable, forward-looking: show momentum."
+    ],
+    "subject_matter_guidance": [
+      "Intersections: how two interests combine; how you collaborate; how you pursue questions beyond class."
+    ],
+    "overall_guidance": "WashU rewards multidimensionality—as long as it forms a coherent shape."
+  },
+  {
+    "name": "Emory",
+    "must_hit_signals": [
+      "Emory emphasizes holistic review and personal qualities alongside academic strength (use essays to make motivations and values visible).",
+      "Evidence you’ll engage deeply—academically and in community."
+    ],
+    "common_failure_modes": [
+      "High achievement with low self-knowledge (no “why,” no reflection).",
+      "“Healthcare/consulting/law” ambition with no specific intellectual curiosity behind it."
+    ],
+    "tone_guidance": [
+      "Thoughtful, reflective, values-aware; avoid hype."
+    ],
+    "subject_matter_guidance": [
+      "Mentorship, research/learning habits, ethical questions you wrestle with, community roles you’ve earned."
+    ],
+    "overall_guidance": "Emory essays should make you feel like someone a faculty member would want in seminar."
+  },
+  {
+    "name": "Georgetown",
+    "must_hit_signals": [
+      "Seriousness of purpose and quality of work: Georgetown’s admissions messaging explicitly stresses evaluating applicants based on academic preparation and the quality/seriousness of their work and purpose.",
+      "Clear fit with the specific school (College, SFS, McDonough, Nursing, etc.)—Georgetown is famously school-specific."
+    ],
+    "common_failure_modes": [
+      "Political/IR “hot takes” without intellectual humility or evidence of study.",
+      "“Future diplomat” vibe with no real experiences, languages, or sustained curiosity."
+    ],
+    "tone_guidance": [
+      "Precise, reasoned, mature. Show you can disagree thoughtfully."
+    ],
+    "subject_matter_guidance": [
+      "The intellectual origin of your interests (what you read, built, studied, argued, tested) and how you’d use Georgetown to go deeper."
+    ],
+    "overall_guidance": "Georgetown essays win when they read like a serious young thinker—ambitious, but disciplined."
+  },
+  {
+    "name": "UNC Chapel Hill",
+    "must_hit_signals": [
+      "Clear evidence of impact and engagement in community + readiness for rigorous academics (UNC admissions guidance and prompts emphasize telling your story with substance)."
+    ],
+    "common_failure_modes": [
+      "Writing that’s purely descriptive (what happened) instead of analytical (why it matters, what you learned).",
+      "“I love Carolina” without concrete fit."
+    ],
+    "tone_guidance": [
+      "Straightforward, sincere, grounded in real community life."
+    ],
+    "subject_matter_guidance": [
+      "Leadership with outcomes, service with relationships, intellectual curiosity with evidence."
+    ],
+    "overall_guidance": "UNC essays work best when you feel like a real contributor to a public-mission campus."
+  },
+  {
+    "name": "University of Virginia (UVA)",
+    "must_hit_signals": [
+      "Personal voice + integrity: UVA’s application guidance includes explicit expectations around authenticity (including how applicants should handle AI use).",
+      "“Community of trust” fit: show responsibility, citizenship, and how you strengthen communities."
+    ],
+    "common_failure_modes": [
+      "Sounding mass-produced or generic (especially relevant given UVA’s explicit concern about applicant voice).",
+      "“Leadership” claims without evidence of follow-through and outcomes."
+    ],
+    "tone_guidance": [
+      "Clear, honest, reflective; don’t write like a brochure."
+    ],
+    "subject_matter_guidance": [
+      "Service/leadership that shows values in action; intellectual curiosity that shows up as habits."
+    ],
+    "overall_guidance": "Write like someone UVA can trust—then show what you’ll build with that trust."
+  },
+  {
+    "name": "USC",
+    "must_hit_signals": [
+      "USC emphasizes a broad, engaged student profile (academics + leadership/impact); essays should show how you’ll engage the “Trojan” community and opportunities."
+    ],
+    "common_failure_modes": [
+      "Entertainment/LA clichés without academic seriousness.",
+      "“Network” as the main reason."
+    ],
+    "tone_guidance": [
+      "Energetic, forward-moving, collaborative."
+    ],
+    "subject_matter_guidance": [
+      "Initiative, creative production, entrepreneurship, community building, and why USC’s ecosystem is the right platform."
+    ],
+    "overall_guidance": "USC essays should feel like you’re ready to do things—and bring others with you."
+  },
+  {
+    "name": "UC San Diego (UCSD)",
+    "must_hit_signals": [
+      "UCSD uses holistic review of academic + personal context; PIQs matter as part of the full picture (use them to make your personal qualities legible).",
+      "Intellectual direction—especially for STEM—paired with evidence of persistence."
+    ],
+    "common_failure_modes": [
+      "PIQs that don’t add new information beyond activities list.",
+      "“I’m good at math” without showing curiosity or initiative."
+    ],
+    "tone_guidance": [
+      "Clear, specific, evidence-based; avoid trying to be “literary.”"
+    ],
+    "subject_matter_guidance": [
+      "Research curiosity, sustained clubs/teams, mentorship roles, contributions in and out of school."
+    ],
+    "overall_guidance": "UCSD essays land when they show you as a durable learner who improves systems and communities."
+  },
+  {
+    "name": "University of Florida (UF)",
+    "must_hit_signals": [
+      "UF’s current process routes applicants through the Common App; the main personal essay must demonstrate clear writing, authenticity, and readiness for college-level work.",
+      "Evidence of initiative and impact in your environment (school, work, family, community)."
+    ],
+    "common_failure_modes": [
+      "Generic Common App essay that could belong to anyone.",
+      "“Brag sheet” tone without reflection."
+    ],
+    "tone_guidance": [
+      "Direct, grounded, optimistic; prioritize clarity."
+    ],
+    "subject_matter_guidance": [
+      "Turning points that changed your behavior, responsibility you carried, self-driven learning, meaningful contribution."
+    ],
+    "overall_guidance": "UF essays win when they show you’re ready to thrive at a large, high-momentum public flagship—and you know how you’ll take advantage of it."
+  }
+]
