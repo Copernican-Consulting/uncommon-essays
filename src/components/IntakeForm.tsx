@@ -44,8 +44,9 @@ export function IntakeForm({ onTextUpdate }: IntakeFormProps) {
     const { getRootProps, getInputProps, isDragActive } = useDropzone({
         onDrop,
         accept: {
-            'application/vnd.openxmlformats-officedocument.wordprocessingml.document': ['.docx', '.doc'],
-            'text/plain': ['.txt']
+            'application/vnd.openxmlformats-officedocument.wordprocessingml.document': ['.docx'],
+            'application/msword': ['.doc'],
+            'text/plain': ['.txt'],
         },
         multiple: false
     });

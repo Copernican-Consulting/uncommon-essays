@@ -15,20 +15,20 @@ export default function Home() {
   const [results, setResults] = useState<any>(null);
   const [selectedModel, setSelectedModel] = useState("openai/gpt-4o");
   const [showSettings, setShowSettings] = useState(false);
+  const [errorDetails, setErrorDetails] = useState<any>(null);
+  const [showDebug, setShowDebug] = useState(false);
 
   const models = [
     { id: 'openai/gpt-4o', name: 'OpenAI GPT-4o' },
-    { id: 'google/gemini-2.0-flash-exp:free', name: 'Google Gemini 2.0 (Free)' },
-    { id: 'deepseek/deepseek-chat', name: 'DeepSeek Chat' },
-    { id: 'meta-llama/llama-3.1-405b-instruct', name: 'Llama 3.1 405B' },
-    { id: 'mistralai/mistral-7b-instruct:free', name: 'Mistral 7B (Free)' },
-    { id: 'google/gemini-flash-1.5', name: 'Gemini 1.5 Flash' }
+    { id: 'tngtech/deepseek-r1t2-chimera:free', name: 'DeepSeek R1 Chimera (Free)' },
+    { id: 'meta-llama/llama-3.1-405b-instruct', name: 'Llama 3.1 405B' }
   ];
 
   const handleSimulate = async () => {
     if (!essayText || selectedSchools.length === 0) return;
 
     setIsSimulating(true);
+    setErrorDetails(null);
     try {
       const response = await fetch('/api/simulate', {
         method: 'POST',
@@ -40,9 +40,16 @@ export default function Home() {
         }),
       });
       const data = await response.json();
-      setResults(data.results);
-    } catch (error) {
+      if (data.error) {
+        setErrorDetails(data);
+        setResults(null);
+      } else {
+        setResults(data.results);
+        setErrorDetails(null);
+      }
+    } catch (error: any) {
       console.error(error);
+      setErrorDetails({ error: "Network Error", details: error.message });
     } finally {
       setIsSimulating(false);
     }
@@ -137,6 +144,26 @@ export default function Home() {
                 )}
               </Button>
             </div>
+
+            {errorDetails && (
+              <div className="mt-8 p-4 bg-red-50 border border-red-200 rounded-xl">
+                <div className="flex justify-between items-start mb-2">
+                  <p className="text-red-700 font-medium font-sans">Simulation Failed</p>
+                  <button
+                    onClick={() => setShowDebug(!showDebug)}
+                    className="text-xs text-red-500 hover:text-red-700 underline font-mono"
+                  >
+                    {showDebug ? "Hide Debug" : "Show Debug"}
+                  </button>
+                </div>
+                <p className="text-sm text-red-600 font-sans">{errorDetails.error}</p>
+                {showDebug && (
+                  <pre className="mt-4 p-4 bg-slate-900 text-slate-300 text-[10px] overflow-auto rounded-lg max-h-64 font-mono text-left">
+                    {JSON.stringify(errorDetails, null, 2)}
+                  </pre>
+                )}
+              </div>
+            )}
           </div>
         </section>
       </div>
