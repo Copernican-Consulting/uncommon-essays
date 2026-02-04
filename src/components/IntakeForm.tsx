@@ -47,6 +47,7 @@ export function IntakeForm({ onTextUpdate }: IntakeFormProps) {
             'application/vnd.openxmlformats-officedocument.wordprocessingml.document': ['.docx'],
             'application/msword': ['.doc'],
             'text/plain': ['.txt'],
+            'application/pdf': ['.pdf'],
         },
         multiple: false
     });
@@ -66,7 +67,7 @@ export function IntakeForm({ onTextUpdate }: IntakeFormProps) {
                         <Upload className="w-8 h-8 text-slate-400" />
                     </div>
                     <p className="text-lg font-medium text-slate-700">Drag & drop your essay</p>
-                    <p className="text-sm text-slate-500 mt-1 mb-4">Accepts Word or Plain Text</p>
+                    <p className="text-sm text-slate-500 mt-1 mb-4">Accepts Word, PDF, or Plain Text</p>
                     <button
                         type="button"
                         onClick={(e) => {

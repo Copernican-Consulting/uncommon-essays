@@ -7,12 +7,19 @@ export async function parseFile(file: Buffer, mimeType: string): Promise<string>
         return result.value;
     } else if (mimeType === 'application/pdf') {
         try {
+            // Lazy load pdf-parse strictly inside the function
+            // This prevents server crashes if pdf-parse has top-level DOM dependency issues
+            // @ts-ignore
             const pdf = require('pdf-parse');
             const data = await pdf(file);
             return data.text;
-        } catch (error) {
+        } catch (error: any) {
             console.error('PDF parsing error:', error);
-            throw new Error('PDF parsing failed on server');
+            // Handle specific DOMMatrix error which is common with pdf-parse in some node environments
+            if (error.message?.includes('DOMMatrix')) {
+                throw new Error('PDF Parse internal error: DOMMatrix. This is a server environment issue.');
+            }
+            throw new Error(`PDF parsing failed: ${error.message}`);
         }
     } else if (mimeType === 'text/plain') {
         return file.toString('utf-8');
