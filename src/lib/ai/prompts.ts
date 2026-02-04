@@ -18,8 +18,9 @@ Task: Review the student's essay: '{{essay_text}}'. Read like a human officer lo
 Output Instructions (Strict JSON Only): Return a JSON object with:
 1.	scores: { "fit": 0, "clarity": 0, "likeability": 0, "accomplishments": 0, "overall": 0 } (All 1-10 scores). Be critical!
 2.	committee_reaction: A 2-3 sentence 'human-sounding' summary of the vibe in the room. Explain WHY the scores are what they are.
-3.	annotations: A list of 4-6 objects. Each must contain:
-o	anchor: VERBATIM quote from the essay (min 5 words). Must match text in the essay exactly!
+3.  math_log: A string summarizing key score drivers. REQUIRED: Use empty string "" if not applicable.
+4.	annotations: A list of 4-6 objects. Each must contain:
+o	anchor: VERBATIM quote from the essay (min 5 words). REQUIRED: Use empty string "" if no direct match found.
 o	type: 'strength' or 'critique'.
 o	comment: Specific feedback based on the criteria.
 `;
@@ -59,8 +60,11 @@ Task: Review the student's essay: '{{essay_text}}'.
 Output Instructions (Strict JSON Only): Return a JSON object with:
 1.	scores: { "fit": 0, "clarity": 0, "likeability": 0, "accomplishments": 0, "overall": 0 }
 2.	committee_reaction: A 2-3 sentence summary of the "Vibe". Do not list the math here.
-3.	math_log: A short string explaining the key math adjustments (e.g., "Fit: +1 for mentioning X, -1 for Y. Likability: +1 for humor").
-4.	annotations: List 4-6 specific strengths/critiques with anchors.
+3.	math_log: A short string explaining the key math adjustments (e.g., "Fit: +1 for mentioning X, -1 for Y. Likability: +1 for humor"). REQUIRED: Use empty string "" if no specific math to log.
+4.	annotations: List 4-6 specific strengths/critiques.
+    - anchor: VERBATIM quote from the essay (min 5 words). REQUIRED: Use empty string "" if no direct match found.
+    - type: 'strength' or 'critique'.
+    - comment: Specific feedback based on the criteria.
 `;
 
 export function hydratePrompt(template: string, schoolData: any, essayText: string, tone?: string) {

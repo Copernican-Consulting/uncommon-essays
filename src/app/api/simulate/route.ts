@@ -38,9 +38,9 @@ export async function POST(req: NextRequest) {
                         overall: z.number().min(0).max(10),
                     }),
                     committee_reaction: z.string(),
-                    math_log: z.string().optional(),
+                    math_log: z.string(),
                     annotations: z.array(z.object({
-                        anchor: z.string().optional(),
+                        anchor: z.string(),
                         type: z.enum(['strength', 'critique']),
                         comment: z.string(),
                     })),
@@ -64,12 +64,16 @@ export async function POST(req: NextRequest) {
 
         return NextResponse.json({ results });
     } catch (error: any) {
-        console.error('Simulation error:', error);
-        // Provide more detail if it's an OpenRouter/OpenAI error
-        const message = error.response?.data?.error?.message || error.message;
+        console.error('Full Simulation Error Object:', error);
+
+        // AI SDK often puts the provider error in error.cause or error.body
+        if (error.cause) console.error('Error Cause:', error.cause);
+        if (error.body) console.error('Error Body:', error.body);
+
+        const message = error.message || "Unknown error";
         return NextResponse.json({
             error: `Simulation failed: ${message}`,
-            details: error.stack
+            details: JSON.stringify(error, Object.getOwnPropertyNames(error))
         }, { status: 500 });
     }
 }
