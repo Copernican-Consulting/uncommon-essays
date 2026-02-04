@@ -14,28 +14,65 @@ export function IntakeForm({ onTextUpdate }: IntakeFormProps) {
     const [fileName, setFileName] = useState<string | null>(null);
     const [isParsing, setIsParsing] = useState(false);
 
-    const onDrop = useCallback(async (acceptedFiles: File[]) => {
+    const onDrop = useCallback(async (acceptedFiles: File[], fileRejections: any[]) => {
+        console.log("onDrop triggered. Accepted:", acceptedFiles, "Rejected:", fileRejections);
+
         const file = acceptedFiles[0];
-        if (!file) return;
+        if (!file) {
+            if (fileRejections.length > 0) {
+                alert(`File rejected: ${fileRejections[0].errors[0].message}`);
+            }
+            return;
+        }
 
         setFileName(file.name);
         setIsParsing(true);
 
-        const formData = new FormData();
-        formData.append('file', file);
-
-        // We'll create a simple API route for file parsing to keep secrets server-side if needed,
-        // though mammoth/pdf-parse run fine in edge/server.
         try {
-            const response = await fetch('/api/parse', {
-                method: 'POST',
-                body: formData,
-            });
-            const data = await response.json();
-            setText(data.text);
-            onTextUpdate(data.text);
-        } catch (error) {
+            let extractedText = "";
+
+            // Handle PDF files client-side
+            if (file.type === 'application/pdf') {
+                const arrayBuffer = await file.arrayBuffer();
+                const pdfjsLib = await import('pdfjs-dist');
+
+                // Set worker path
+                pdfjsLib.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.js`;
+
+                const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+                const textParts: string[] = [];
+
+                for (let i = 1; i <= pdf.numPages; i++) {
+                    const page = await pdf.getPage(i);
+                    const textContent = await page.getTextContent();
+                    const pageText = textContent.items.map((item: any) => item.str).join(' ');
+                    textParts.push(pageText);
+                }
+
+                extractedText = textParts.join('\n\n');
+            } else {
+                // For Word/Text files, use server-side parsing
+                const formData = new FormData();
+                formData.append('file', file);
+
+                const response = await fetch('/api/parse', {
+                    method: 'POST',
+                    body: formData,
+                });
+                const data = await response.json();
+
+                if (!response.ok || data.error) {
+                    throw new Error(data.error || "Failed to parse file");
+                }
+
+                extractedText = data.text;
+            }
+
+            setText(extractedText);
+            onTextUpdate(extractedText);
+        } catch (error: any) {
             console.error("Parsing error:", error);
+            alert(`Error reading file: ${error.message}`);
         } finally {
             setIsParsing(false);
         }
@@ -54,7 +91,13 @@ export function IntakeForm({ onTextUpdate }: IntakeFormProps) {
 
     return (
         <div className="space-y-4">
-            {!text ? (
+            {isParsing ? (
+                <div className="border-2 border-dashed border-slate-200 rounded-xl p-12 flex flex-col items-center justify-center text-center bg-slate-50">
+                    <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary mb-4"></div>
+                    <p className="text-lg font-medium text-slate-700">Reading your essay...</p>
+                    <p className="text-sm text-slate-500">This may take a moment</p>
+                </div>
+            ) : !text ? (
                 <div
                     {...getRootProps()}
                     className={cn(
@@ -78,6 +121,8 @@ export function IntakeForm({ onTextUpdate }: IntakeFormProps) {
                     >
                         or paste essay manually
                     </button>
+                    {/* Debug info for file type */}
+                    <p className="text-[10px] text-slate-400 mt-4">Debug: PDF/Docx/Txt supported</p>
                 </div>
             ) : (
                 <div className="relative">

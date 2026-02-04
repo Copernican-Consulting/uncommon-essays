@@ -1,16 +1,69 @@
 import mammoth from 'mammoth';
 
 export async function parseFile(file: Buffer, mimeType: string): Promise<string> {
-    console.log('Parsing file with mimeType:', mimeType);
+    console.log(`Parsing file: Size=${file.length} bytes, MimeType=${mimeType}`);
     if (mimeType === 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' || mimeType === 'application/msword') {
         const result = await mammoth.extractRawText({ buffer: file });
         return result.value;
     } else if (mimeType === 'application/pdf') {
         try {
-            // Lazy load pdf-parse strictly inside the function
-            // This prevents server crashes if pdf-parse has top-level DOM dependency issues
+            // Polyfill Promise.withResolvers if missing (Node < 22)
             // @ts-ignore
-            const pdf = require('pdf-parse');
+            if (typeof Promise.withResolvers === 'undefined') {
+                // @ts-ignore
+                Promise.withResolvers = function () {
+                    let resolve, reject;
+                    const promise = new Promise((res, rej) => {
+                        resolve = res;
+                        reject = rej;
+                    });
+                    return { promise, resolve, reject };
+                };
+            }
+
+            // Polyfill DOMMatrix for pdf-parse in Node environment
+            // @ts-ignore
+            if (!global.DOMMatrix) {
+                // @ts-ignore
+                global.DOMMatrix = class DOMMatrix {
+                    constructor() { return this; }
+                    toFloat32Array() { return [1, 0, 0, 1, 0, 0]; }
+                    translate() { return this; }
+                    scale() { return this; }
+                };
+            }
+
+            // Lazy load pdf-parse strictly inside the function
+            // @ts-ignore
+            const pdfModule = await import('pdf-parse');
+
+            console.error('PDF Module Loaded Keys:', Object.keys(pdfModule));
+            console.error('PDF Module.default type:', typeof pdfModule.default);
+
+            // Try multiple export patterns
+            let pdf = pdfModule.default || pdfModule.parse || pdfModule;
+
+            // If still an object, dig deeper
+            if (typeof pdf === 'object' && pdf !== null) {
+                console.error('PDF is object. Keys:', Object.keys(pdf));
+                // Check for nested default
+                if (typeof pdf.default === 'function') {
+                    pdf = pdf.default;
+                } else if (typeof pdf.parse === 'function') {
+                    pdf = pdf.parse;
+                }
+            }
+
+            // Final validation
+            if (typeof pdf !== 'function') {
+                const structure = {
+                    moduleKeys: Object.keys(pdfModule),
+                    defaultType: typeof pdfModule.default,
+                    pdfType: typeof pdf
+                };
+                throw new Error(`PDF Library Import Failed. Structure: ${JSON.stringify(structure)}`);
+            }
+
             const data = await pdf(file);
             return data.text;
         } catch (error: any) {
