@@ -14,6 +14,8 @@ export default function Home() {
   const [isSimulating, setIsSimulating] = useState(false);
   const [results, setResults] = useState<any>(null);
   const [selectedModel, setSelectedModel] = useState("openai/gpt-4o");
+  const [selectedTone, setSelectedTone] = useState("");
+  const [scoringModel, setScoringModel] = useState("standard");
   const [showSettings, setShowSettings] = useState(false);
   const [errorDetails, setErrorDetails] = useState<any>(null);
   const [showDebug, setShowDebug] = useState(false);
@@ -36,7 +38,9 @@ export default function Home() {
         body: JSON.stringify({
           essayText,
           schoolIds: selectedSchools,
-          modelId: selectedModel
+          modelId: selectedModel,
+          tone: selectedTone,
+          scoringModel: scoringModel
         }),
       });
       const data = await response.json();
@@ -89,24 +93,52 @@ export default function Home() {
               {showSettings && (
                 <div className="absolute right-0 mt-2 w-64 bg-white rounded-xl shadow-2xl border border-slate-100 p-4 z-50 text-left">
                   <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">AI Model Selection</h4>
-                  <div className="space-y-2">
-                    {models.map(m => (
-                      <button
-                        key={m.id}
-                        onClick={() => {
-                          setSelectedModel(m.id);
-                          setShowSettings(false);
-                        }}
-                        className={cn(
-                          "w-full text-left px-3 py-2 rounded-lg text-sm transition-colors",
-                          selectedModel === m.id
-                            ? "bg-primary/10 text-primary font-medium"
-                            : "hover:bg-slate-50 text-slate-600"
-                        )}
+                  <div className="space-y-4">
+                    <div className="space-y-2">
+                      {models.map(m => (
+                        <button
+                          key={m.id}
+                          onClick={() => {
+                            setSelectedModel(m.id);
+                            // Keep settings open
+                          }}
+                          className={cn(
+                            "w-full text-left px-3 py-2 rounded-lg text-sm transition-colors",
+                            selectedModel === m.id
+                              ? "bg-primary/10 text-primary font-medium"
+                              : "hover:bg-slate-50 text-slate-600"
+                          )}
+                        >
+                          {m.name}
+                        </button>
+                      ))}
+                    </div>
+
+                    <div className="border-t border-slate-100 pt-4">
+                      <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Feedback Tone</h4>
+                      <select
+                        value={selectedTone}
+                        onChange={(e) => setSelectedTone(e.target.value)}
+                        className="w-full p-2 text-sm border-slate-200 rounded-lg text-slate-600 focus:ring-primary focus:border-primary"
                       >
-                        {m.name}
-                      </button>
-                    ))}
+                        <option value="">Neutral / Professional (Default)</option>
+                        <option value="Blunt, direct, and brutally honest">Blunt & Brutally Honest</option>
+                        <option value="Honest but supportive and encouraging">Supportive & Encouraging</option>
+                        <option value="Honest, sharp, and delivered with humor">Humorous & Witty</option>
+                      </select>
+                    </div>
+
+                    <div className="border-t border-slate-100 pt-4">
+                      <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Scoring Logic</h4>
+                      <select
+                        value={scoringModel}
+                        onChange={(e) => setScoringModel(e.target.value)}
+                        className="w-full p-2 text-sm border-slate-200 rounded-lg text-slate-600 focus:ring-primary focus:border-primary"
+                      >
+                        <option value="standard">Standard (Legacy)</option>
+                        <option value="experimental">Experimental (Additive)</option>
+                      </select>
+                    </div>
                   </div>
                 </div>
               )}
@@ -128,7 +160,7 @@ export default function Home() {
               <SchoolPicker selected={selectedSchools} onChange={setSelectedSchools} max={5} />
             </div>
 
-            <div className="pt-6">
+            <div className="pt-6 space-y-4">
               <Button
                 onClick={handleSimulate}
                 disabled={!essayText || selectedSchools.length === 0 || isSimulating}
@@ -143,6 +175,32 @@ export default function Home() {
                   "Enter Committee Room"
                 )}
               </Button>
+
+              {isSimulating && (
+                <div className="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                  <p className="text-sm font-medium text-slate-500 mb-3 uppercase tracking-wider">Committee Status</p>
+                  <div className="space-y-2">
+                    {selectedSchools.map(school => {
+                      // If results contains this school, it's done.
+                      const isDone = results?.some((r: any) => r.schoolName === school);
+                      return (
+                        <div key={school} className="flex items-center justify-between text-sm">
+                          <span className="text-slate-700">{school}</span>
+                          {isDone ? (
+                            <span className="text-green-600 font-medium flex items-center gap-1">
+                              Completed
+                            </span>
+                          ) : (
+                            <span className="text-slate-400 flex items-center gap-1">
+                              <Loader2 className="w-3 h-3 animate-spin" /> Analyzing
+                            </span>
+                          )}
+                        </div>
+                      )
+                    })}
+                  </div>
+                </div>
+              )}
             </div>
 
             {errorDetails && (

@@ -103,7 +103,7 @@ export function CommitteeSidebar({
                                                     <div
                                                         className="h-full rounded-full transition-all duration-1000"
                                                         style={{
-                                                            width: `${row.score * 10}%`,
+                                                            width: `${Math.max(0, Math.min(100, (Number(row.score) || 0) * 10))}%`,
                                                             backgroundColor: color.hex
                                                         }}
                                                     />

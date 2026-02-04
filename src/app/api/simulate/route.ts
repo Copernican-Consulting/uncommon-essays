@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { generateObject } from 'ai';
 import { createOpenAI } from '@ai-sdk/openai';
-import { hydratePrompt, MASTER_PROMPT_TEMPLATE } from '@/lib/ai/prompts';
+import { hydratePrompt, MASTER_PROMPT_TEMPLATE, EXPERIMENTAL_ADDITIVE_PROMPT } from '@/lib/ai/prompts';
 import schoolsData from '@/lib/data/schools.json';
 import { z } from 'zod';
 
@@ -12,19 +12,20 @@ const openrouter = createOpenAI({
 
 export async function POST(req: NextRequest) {
     try {
-        const { essayText, schoolIds, modelId } = await req.json();
+        const { essayText, schoolIds, modelId, tone, scoringModel } = await req.json();
         const selectedModel = modelId || 'openai/gpt-4o'; // Default
 
-        console.log('Simulate request:', { essayTextLength: essayText?.length, schoolIds, selectedModel });
+        console.log('Simulate request:', { essayTextLength: essayText?.length, schoolIds, selectedModel, tone, scoringModel });
 
         if (!essayText || !schoolIds || !Array.isArray(schoolIds)) {
             return NextResponse.json({ error: 'Invalid request' }, { status: 400 });
         }
 
         const selectedSchools = (schoolsData as any[]).filter((s: any) => schoolIds.includes(s.name));
+        const promptTemplate = scoringModel === 'experimental' ? EXPERIMENTAL_ADDITIVE_PROMPT : MASTER_PROMPT_TEMPLATE;
 
         const simulationPromises = selectedSchools.map(async (school: any) => {
-            const prompt = hydratePrompt(MASTER_PROMPT_TEMPLATE, school, essayText);
+            const prompt = hydratePrompt(promptTemplate, school, essayText, tone);
 
             const result = await generateObject({
                 model: openrouter(selectedModel),
