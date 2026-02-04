@@ -86,6 +86,17 @@ export function ReviewBoard({ essayText, results, onBack }: ReviewBoardProps) {
                         activeSchool={activeSchool}
                         setActiveSchool={setActiveSchool}
                         activeAnnotationId={activeAnnotationId}
+                        onAnnotationClick={(id, school) => {
+                            setActiveAnnotationId(id);
+                            setActiveSchool(school);
+                            // Scroll to highlight
+                            setTimeout(() => {
+                                const element = document.getElementById(`highlight-${id}`);
+                                if (element) {
+                                    element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                                }
+                            }, 50);
+                        }}
                     />
                 </div>
             </div>

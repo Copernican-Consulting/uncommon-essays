@@ -9,6 +9,7 @@ interface CommitteeSidebarProps {
     activeSchool: string;
     setActiveSchool: (name: string) => void;
     activeAnnotationId: string | null;
+    onAnnotationClick: (id: string, school: string) => void;
 }
 
 export function CommitteeSidebar({
@@ -16,7 +17,8 @@ export function CommitteeSidebar({
     schoolColors,
     activeSchool,
     setActiveSchool,
-    activeAnnotationId
+    activeAnnotationId,
+    onAnnotationClick
 }: CommitteeSidebarProps) {
     return (
         <div className="space-y-4">
@@ -187,9 +189,13 @@ export function CommitteeSidebar({
                                                 <div
                                                     key={id}
                                                     id={id}
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        onAnnotationClick(id, result.schoolName);
+                                                    }}
                                                     className={cn(
-                                                        "p-3 rounded-xl border transition-all text-sm",
-                                                        isFocused ? "bg-slate-50 border-primary/30 ring-1 ring-primary/20 shadow-sm scale-[1.02]" : "bg-slate-50/50 border-slate-100 opacity-80"
+                                                        "p-3 rounded-xl border transition-all text-sm cursor-pointer",
+                                                        isFocused ? "bg-slate-50 border-primary/30 ring-1 ring-primary/20 shadow-sm scale-[1.02]" : "bg-slate-50/50 border-slate-100 opacity-80 hover:opacity-100 hover:border-slate-300"
                                                     )}
                                                 >
                                                     <div className="flex items-center gap-2 mb-2">

@@ -49,6 +49,7 @@ export function HighlightableText({
                     newResult.push(
                         <mark
                             key={anno.id}
+                            id={`highlight-${anno.id}`}
                             onClick={() => onAnnotationClick(anno.id, anno.schoolName)}
                             className={cn(
                                 "cursor-pointer px-0.5 rounded transition-all",
