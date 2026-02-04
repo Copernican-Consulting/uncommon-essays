@@ -36,8 +36,8 @@ export function IntakeForm({ onTextUpdate }: IntakeFormProps) {
                 const arrayBuffer = await file.arrayBuffer();
                 const pdfjsLib = await import('pdfjs-dist');
 
-                // Set worker path
-                pdfjsLib.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.js`;
+                // Set worker path - use unpkg as fallback
+                pdfjsLib.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.mjs`;
 
                 const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
                 const textParts: string[] = [];
