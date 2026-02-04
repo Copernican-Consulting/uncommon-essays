@@ -38,8 +38,9 @@ export async function POST(req: NextRequest) {
                         overall: z.number().min(0).max(10),
                     }),
                     committee_reaction: z.string(),
+                    math_log: z.string().optional(),
                     annotations: z.array(z.object({
-                        anchor: z.string(),
+                        anchor: z.string().optional(),
                         type: z.enum(['strength', 'critique']),
                         comment: z.string(),
                     })),

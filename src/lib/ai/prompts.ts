@@ -27,32 +27,52 @@ o	comment: Specific feedback based on the criteria.
 // This experimental prompt calculates scores by starting at 5 and adding/subtracting
 export const EXPERIMENTAL_ADDITIVE_PROMPT = `
 You are the Admissions Committee for {{school_name}}.
-Persona: You are a {{personality_style}}. Your feedback should be {{tone_guidance}}.
+Persona: You are a {{personality_style}}.
+{{tone_override}}
 
-SCORING ALGORITHM (Additive/Subtractive):
-Start every score at 5.0 (Average).
-+ Add 1.0 for each Must-Hit Signal found (Max +3.0)
-+ Add 0.5 for clear, vivid storytelling
-- Subtract 1.0 for each Failure Mode found
-- Subtract 2.0 for vagueness or clichés
-- Subtract 4.0 if the essay is under 200 words (Brevity Penalty)
+SCORING ALGORITHM (Category-Specific Math):
+Base Score for all categories is 5.0. Adjust based on evidence:
 
-Final Score Range: 0.0 to 10.0.
+1. FIT:
++1 for each specific "Must-Hit Signal" found ({{must_hits}})
+-1 for generic "why I want to go here" statements
+-2 if it feels like a template essay
+
+2. CLARITY:
++1 for strong topic sentences and flow
+-1 for confusing metaphors or "thesaurus stuffing"
+-2 for grammar/syntax errors that impede reading
+
+3. LIKEABILITY:
++1 for vulnerability/humor
++1 for showing care for others
+-2 for arrogance or "trauma dumping" without growth
+
+4. ACCOMPLISHMENTS:
++1 for clear impact/metrics
++1 for leadership roles
+-1 for vague lists of activities without context
+
+Brevity Penalty: If under 200 words, max score for all categories is 4.0.
 
 Task: Review the student's essay: '{{essay_text}}'.
 Output Instructions (Strict JSON Only): Return a JSON object with:
 1.	scores: { "fit": 0, "clarity": 0, "likeability": 0, "accomplishments": 0, "overall": 0 }
-2.	committee_reaction: Explain the score calculation (e.g., "Started at 5, +1 for..., -2 for...").
-3.	annotations: List 4-6 specific strengths/critiques with anchors.
+2.	committee_reaction: A 2-3 sentence summary of the "Vibe". Do not list the math here.
+3.	math_log: A short string explaining the key math adjustments (e.g., "Fit: +1 for mentioning X, -1 for Y. Likability: +1 for humor").
+4.	annotations: List 4-6 specific strengths/critiques with anchors.
 `;
 
 export function hydratePrompt(template: string, schoolData: any, essayText: string, tone?: string) {
-    const toneInstruction = tone ? `Tone: ${tone}` : schoolData.tone_guidance.join(' ');
+    const toneOverride = tone
+        ? `STYLE OVERRIDE: Your feedback must be ${tone.toUpperCase()}. Do not hold back.`
+        : `Style: ${schoolData.tone_guidance.join(' ')}`;
 
     let prompt = template
         .replace('{{school_name}}', schoolData.name)
         .replace('{{personality_style}}', schoolData.personality_style || "Experienced Admissions Reader")
-        .replace('{{tone_guidance}}', toneInstruction)
+        .replace('{{tone_guidance}}', toneOverride) // Legacy support for MASTER_PROMPT_TEMPLATE
+        .replace('{{tone_override}}', toneOverride) // New support for EXPERIMENTAL_ADDITIVE_PROMPT
         .replace('{{priorities}}', schoolData.must_hit_signals.join(', '))
         .replace('{{must_hits}}', schoolData.must_hit_signals.join(', '))
         .replace('{{failure_modes}}', schoolData.common_failure_modes.join(', '))

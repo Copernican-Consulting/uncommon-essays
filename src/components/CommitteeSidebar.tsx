@@ -113,6 +113,20 @@ export function CommitteeSidebar({
                                     </div>
                                 </div>
 
+                                {/* Math Log (Experimental) */}
+                                {result.math_log && (
+                                    <div className="pt-4 border-t border-slate-100">
+                                        <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2 flex items-center gap-1">
+                                            <ChartBar className="w-3 h-3" /> Math Log
+                                        </h4>
+                                        <div className="p-3 bg-slate-50 border border-slate-200 rounded-lg">
+                                            <p className="text-xs font-mono text-slate-600 whitespace-pre-wrap leading-relaxed">
+                                                {result.math_log}
+                                            </p>
+                                        </div>
+                                    </div>
+                                )}
+
                                 {/* Evaluation Criteria */}
                                 <div className="pt-4 border-t border-slate-100">
                                     <details className="group">
@@ -178,7 +192,7 @@ export function CommitteeSidebar({
                                                         isFocused ? "bg-slate-50 border-primary/30 ring-1 ring-primary/20 shadow-sm scale-[1.02]" : "bg-slate-50/50 border-slate-100 opacity-80"
                                                     )}
                                                 >
-                                                    <div className="flex items-center gap-2 mb-1.5">
+                                                    <div className="flex items-center gap-2 mb-2">
                                                         <span className={cn(
                                                             "text-[9px] font-bold uppercase py-0.5 px-1.5 rounded",
                                                             anno.type === 'strength' ? "bg-green-100 text-green-700" : "bg-amber-100 text-amber-700"
@@ -186,6 +200,11 @@ export function CommitteeSidebar({
                                                             {anno.type}
                                                         </span>
                                                     </div>
+                                                    {anno.anchor && (
+                                                        <blockquote className="border-l-2 border-slate-300 pl-2 mb-2 italic text-xs text-slate-500 line-clamp-2">
+                                                            "{anno.anchor}"
+                                                        </blockquote>
+                                                    )}
                                                     <p className="text-slate-700 leading-snug">{anno.comment}</p>
                                                 </div>
                                             );
