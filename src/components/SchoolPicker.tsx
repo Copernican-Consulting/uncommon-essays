@@ -1,9 +1,10 @@
 "use client";
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useRef } from 'react';
 import { Check, ChevronsUpDown, Search, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import schoolsData from '@/lib/data/schools.json';
+import { useOnClickOutside } from '@/hooks/useOnClickOutside';
 
 interface SchoolPickerProps {
     selected: string[];
@@ -14,6 +15,9 @@ interface SchoolPickerProps {
 export function SchoolPicker({ selected, onChange, max = 5 }: SchoolPickerProps) {
     const [isOpen, setIsOpen] = useState(false);
     const [search, setSearch] = useState("");
+    const ref = useRef<HTMLDivElement>(null);
+
+    useOnClickOutside(ref, () => setIsOpen(false));
 
     const filteredSchools = useMemo(() => {
         return schoolsData.filter(school =>
@@ -32,7 +36,7 @@ export function SchoolPicker({ selected, onChange, max = 5 }: SchoolPickerProps)
 
     return (
         <div className="space-y-4">
-            <div className="relative">
+            <div className="relative" ref={ref}>
                 <div
                     onClick={() => setIsOpen(!isOpen)}
                     className="flex items-center justify-between w-full px-4 py-3 bg-white border border-slate-200 rounded-xl cursor-pointer hover:border-slate-300 transition-all"

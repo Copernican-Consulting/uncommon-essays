@@ -1,12 +1,13 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { IntakeForm } from '@/components/IntakeForm';
 import { SchoolPicker } from '@/components/SchoolPicker';
 import { ReviewBoard } from '@/components/ReviewBoard';
 import { Button } from '@/components/ui/Button';
 import { Loader2 } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { useOnClickOutside } from '@/hooks/useOnClickOutside';
 
 export default function Home() {
   const [essayText, setEssayText] = useState("");
@@ -19,6 +20,9 @@ export default function Home() {
   const [showSettings, setShowSettings] = useState(false);
   const [errorDetails, setErrorDetails] = useState<any>(null);
   const [showDebug, setShowDebug] = useState(false);
+  const settingsRef = useRef<HTMLDivElement>(null);
+
+  useOnClickOutside(settingsRef, () => setShowSettings(false));
 
   const models = [
     { id: 'openai/gpt-4o', name: 'OpenAI GPT-4o' },
@@ -81,7 +85,7 @@ export default function Home() {
       <div className="max-w-4xl mx-auto mt-12">
         <header className="text-center mb-12 relative">
           <div className="absolute top-0 right-0">
-            <div className="relative">
+            <div className="relative" ref={settingsRef}>
               <Button
                 variant="ghost"
                 size="sm"
