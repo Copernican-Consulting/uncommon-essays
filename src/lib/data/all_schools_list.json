@@ -1,0 +1,3787 @@
+[
+  {
+    "name": "\"Mount Saint Mary's University, Los Angeles\"",
+    "isActive": false
+  },
+  {
+    "name": "\"University of Maryland, Baltimore County\"",
+    "isActive": false
+  },
+  {
+    "name": "\"University of Maryland, Eastern Shore\"",
+    "isActive": false
+  },
+  {
+    "name": "\"University of Nevada, Las Vegas\"",
+    "isActive": false
+  },
+  {
+    "name": "Abilene Christian University",
+    "isActive": false
+  },
+  {
+    "name": "Adelphi University",
+    "isActive": false
+  },
+  {
+    "name": "Agnes Scott College",
+    "isActive": false
+  },
+  {
+    "name": "Alaska Pacific University",
+    "isActive": false
+  },
+  {
+    "name": "Albany College of Pharmacy and Health Sciences",
+    "isActive": false
+  },
+  {
+    "name": "Albertus Magnus College",
+    "isActive": false
+  },
+  {
+    "name": "Albion College",
+    "isActive": false
+  },
+  {
+    "name": "Albright College",
+    "isActive": false
+  },
+  {
+    "name": "Alfred University",
+    "isActive": false
+  },
+  {
+    "name": "Allegheny College",
+    "isActive": false
+  },
+  {
+    "name": "Alma College",
+    "isActive": false
+  },
+  {
+    "name": "Alvernia University",
+    "isActive": false
+  },
+  {
+    "name": "AMDA College and Conservatory of the Performing Arts",
+    "isActive": false
+  },
+  {
+    "name": "American Academy of Art College",
+    "isActive": false
+  },
+  {
+    "name": "American International College",
+    "isActive": false
+  },
+  {
+    "name": "American University",
+    "isActive": false
+  },
+  {
+    "name": "Amherst College",
+    "isActive": false
+  },
+  {
+    "name": "Anderson University",
+    "isActive": false
+  },
+  {
+    "name": "Anna Maria College",
+    "isActive": false
+  },
+  {
+    "name": "Antioch College",
+    "isActive": false
+  },
+  {
+    "name": "Appalachian State University",
+    "isActive": false
+  },
+  {
+    "name": "Aquinas College",
+    "isActive": false
+  },
+  {
+    "name": "Arcadia University",
+    "isActive": false
+  },
+  {
+    "name": "Arizona State University",
+    "isActive": false
+  },
+  {
+    "name": "Arkansas Baptist College",
+    "isActive": false
+  },
+  {
+    "name": "Art Academy of Cincinnati",
+    "isActive": false
+  },
+  {
+    "name": "Asbury University",
+    "isActive": false
+  },
+  {
+    "name": "Ashland University",
+    "isActive": false
+  },
+  {
+    "name": "Assumption College",
+    "isActive": false
+  },
+  {
+    "name": "Auburn University",
+    "isActive": false
+  },
+  {
+    "name": "Augsburg University",
+    "isActive": false
+  },
+  {
+    "name": "Augusta University",
+    "isActive": false
+  },
+  {
+    "name": "Augustana College",
+    "isActive": false
+  },
+  {
+    "name": "Augustana University",
+    "isActive": false
+  },
+  {
+    "name": "Aurora University",
+    "isActive": false
+  },
+  {
+    "name": "Austin College",
+    "isActive": false
+  },
+  {
+    "name": "Austin Peay State University",
+    "isActive": false
+  },
+  {
+    "name": "Ave Maria University",
+    "isActive": false
+  },
+  {
+    "name": "Babson College",
+    "isActive": false
+  },
+  {
+    "name": "Baker College",
+    "isActive": false
+  },
+  {
+    "name": "Baldwin Wallace University",
+    "isActive": false
+  },
+  {
+    "name": "Ball State University",
+    "isActive": false
+  },
+  {
+    "name": "Bard College",
+    "isActive": false
+  },
+  {
+    "name": "Bard College at Simon's Rock—The Early College",
+    "isActive": false
+  },
+  {
+    "name": "Barnard College",
+    "isActive": false
+  },
+  {
+    "name": "Barry University",
+    "isActive": false
+  },
+  {
+    "name": "Barton College",
+    "isActive": false
+  },
+  {
+    "name": "Bates College",
+    "isActive": false
+  },
+  {
+    "name": "Bay Path University",
+    "isActive": false
+  },
+  {
+    "name": "Baylor University",
+    "isActive": false
+  },
+  {
+    "name": "Beacon College",
+    "isActive": false
+  },
+  {
+    "name": "Bellarmine University",
+    "isActive": false
+  },
+  {
+    "name": "Bellevue College",
+    "isActive": false
+  },
+  {
+    "name": "Belmont Abbey College",
+    "isActive": false
+  },
+  {
+    "name": "Belmont University",
+    "isActive": false
+  },
+  {
+    "name": "Beloit College",
+    "isActive": false
+  },
+  {
+    "name": "Benedict College",
+    "isActive": false
+  },
+  {
+    "name": "Benedictine College",
+    "isActive": false
+  },
+  {
+    "name": "Benedictine University",
+    "isActive": false
+  },
+  {
+    "name": "Bennington College",
+    "isActive": false
+  },
+  {
+    "name": "Bentley University",
+    "isActive": false
+  },
+  {
+    "name": "Berry College",
+    "isActive": false
+  },
+  {
+    "name": "Bethany College",
+    "isActive": false
+  },
+  {
+    "name": "Bethel University",
+    "isActive": false
+  },
+  {
+    "name": "Birmingham-Southern College",
+    "isActive": false
+  },
+  {
+    "name": "Blackburn College",
+    "isActive": false
+  },
+  {
+    "name": "Bloomfield College",
+    "isActive": false
+  },
+  {
+    "name": "Bluffton University",
+    "isActive": false
+  },
+  {
+    "name": "Boston College",
+    "isActive": false
+  },
+  {
+    "name": "Boston University",
+    "isActive": false
+  },
+  {
+    "name": "Bowdoin College",
+    "isActive": false
+  },
+  {
+    "name": "Bowling Green State University",
+    "isActive": false
+  },
+  {
+    "name": "Bradley University",
+    "isActive": false
+  },
+  {
+    "name": "Brandeis University",
+    "isActive": false
+  },
+  {
+    "name": "Brenau University",
+    "isActive": false
+  },
+  {
+    "name": "Brevard College",
+    "isActive": false
+  },
+  {
+    "name": "Bridgewater College",
+    "isActive": false
+  },
+  {
+    "name": "Bridgewater State University",
+    "isActive": false
+  },
+  {
+    "name": "Brown University",
+    "isActive": true,
+    "activeName": "Brown"
+  },
+  {
+    "name": "Bryant University",
+    "isActive": false
+  },
+  {
+    "name": "Bryn Athyn College",
+    "isActive": false
+  },
+  {
+    "name": "Bryn Mawr College",
+    "isActive": false
+  },
+  {
+    "name": "Bucknell University",
+    "isActive": false
+  },
+  {
+    "name": "Buena Vista University",
+    "isActive": false
+  },
+  {
+    "name": "Bushnell University",
+    "isActive": false
+  },
+  {
+    "name": "Butler University",
+    "isActive": false
+  },
+  {
+    "name": "Cabrini University",
+    "isActive": false
+  },
+  {
+    "name": "Cairn University",
+    "isActive": false
+  },
+  {
+    "name": "Caldwell University",
+    "isActive": false
+  },
+  {
+    "name": "California College of the Arts",
+    "isActive": false
+  },
+  {
+    "name": "California Institute of Technology (Caltech)",
+    "isActive": true,
+    "activeName": "Caltech"
+  },
+  {
+    "name": "California Lutheran University",
+    "isActive": false
+  },
+  {
+    "name": "Calumet College of St. Joseph",
+    "isActive": false
+  },
+  {
+    "name": "Calvin College",
+    "isActive": false
+  },
+  {
+    "name": "Canisius College",
+    "isActive": false
+  },
+  {
+    "name": "Capital University",
+    "isActive": false
+  },
+  {
+    "name": "Capitol Technology University",
+    "isActive": false
+  },
+  {
+    "name": "Cardinal Stritch University",
+    "isActive": false
+  },
+  {
+    "name": "Carleton College",
+    "isActive": false
+  },
+  {
+    "name": "Carlow University",
+    "isActive": false
+  },
+  {
+    "name": "Carnegie Mellon University",
+    "isActive": true,
+    "activeName": "Carnegie Mellon (CMU)"
+  },
+  {
+    "name": "Carroll College",
+    "isActive": false
+  },
+  {
+    "name": "Carroll University",
+    "isActive": false
+  },
+  {
+    "name": "Carthage College",
+    "isActive": false
+  },
+  {
+    "name": "Case Western Reserve University",
+    "isActive": false
+  },
+  {
+    "name": "Catawba College",
+    "isActive": false
+  },
+  {
+    "name": "Cazenovia College",
+    "isActive": false
+  },
+  {
+    "name": "Cedar Crest College",
+    "isActive": false
+  },
+  {
+    "name": "Centenary College of Louisiana",
+    "isActive": false
+  },
+  {
+    "name": "Centenary University",
+    "isActive": false
+  },
+  {
+    "name": "Central Connecticut State University",
+    "isActive": false
+  },
+  {
+    "name": "Central Michigan University",
+    "isActive": false
+  },
+  {
+    "name": "Central Washington University",
+    "isActive": false
+  },
+  {
+    "name": "Centre College",
+    "isActive": false
+  },
+  {
+    "name": "Chaminade University of Honolulu",
+    "isActive": false
+  },
+  {
+    "name": "Champlain College",
+    "isActive": false
+  },
+  {
+    "name": "Chapman University",
+    "isActive": false
+  },
+  {
+    "name": "Charles R. Drew University of Medicine and Science",
+    "isActive": false
+  },
+  {
+    "name": "Charleston Southern University",
+    "isActive": false
+  },
+  {
+    "name": "Chatham University",
+    "isActive": false
+  },
+  {
+    "name": "Chestnut Hill College",
+    "isActive": false
+  },
+  {
+    "name": "Chicago State University",
+    "isActive": false
+  },
+  {
+    "name": "Chowan University",
+    "isActive": false
+  },
+  {
+    "name": "Christian Brothers University",
+    "isActive": false
+  },
+  {
+    "name": "Christopher Newport University",
+    "isActive": false
+  },
+  {
+    "name": "Claflin University",
+    "isActive": false
+  },
+  {
+    "name": "Claremont McKenna College",
+    "isActive": false
+  },
+  {
+    "name": "Clark Atlanta University",
+    "isActive": false
+  },
+  {
+    "name": "Clark University",
+    "isActive": false
+  },
+  {
+    "name": "Clarkson University",
+    "isActive": false
+  },
+  {
+    "name": "Cleary University",
+    "isActive": false
+  },
+  {
+    "name": "Clemson University",
+    "isActive": false
+  },
+  {
+    "name": "Cleveland Institute of Art",
+    "isActive": false
+  },
+  {
+    "name": "Cleveland State University",
+    "isActive": false
+  },
+  {
+    "name": "Clinton College",
+    "isActive": false
+  },
+  {
+    "name": "Coastal Carolina University",
+    "isActive": false
+  },
+  {
+    "name": "Coe College",
+    "isActive": false
+  },
+  {
+    "name": "Colby College",
+    "isActive": false
+  },
+  {
+    "name": "Colby-Sawyer College",
+    "isActive": false
+  },
+  {
+    "name": "Colgate University",
+    "isActive": false
+  },
+  {
+    "name": "College for Creative Studies",
+    "isActive": false
+  },
+  {
+    "name": "College of Charleston",
+    "isActive": false
+  },
+  {
+    "name": "College of Mount Saint Vincent",
+    "isActive": false
+  },
+  {
+    "name": "College of Saint Benedict",
+    "isActive": false
+  },
+  {
+    "name": "College of St. Scholastica",
+    "isActive": false
+  },
+  {
+    "name": "College of the Atlantic",
+    "isActive": false
+  },
+  {
+    "name": "College of the Holy Cross",
+    "isActive": false
+  },
+  {
+    "name": "College of William & Mary",
+    "isActive": false
+  },
+  {
+    "name": "College of Wooster",
+    "isActive": false
+  },
+  {
+    "name": "Colorado College",
+    "isActive": false
+  },
+  {
+    "name": "Colorado Mesa University",
+    "isActive": false
+  },
+  {
+    "name": "Colorado School of Mines",
+    "isActive": false
+  },
+  {
+    "name": "Colorado State University",
+    "isActive": false
+  },
+  {
+    "name": "Columbia College",
+    "isActive": true,
+    "activeName": "Columbia"
+  },
+  {
+    "name": "Columbia College Chicago",
+    "isActive": false
+  },
+  {
+    "name": "Columbia College Hollywood",
+    "isActive": false
+  },
+  {
+    "name": "Columbia University",
+    "isActive": true,
+    "activeName": "Columbia"
+  },
+  {
+    "name": "Columbus College of Art & Design (CCAD)",
+    "isActive": false
+  },
+  {
+    "name": "Concord University",
+    "isActive": false
+  },
+  {
+    "name": "Concordia College at Moorhead",
+    "isActive": false
+  },
+  {
+    "name": "Concordia University Ann Arbor",
+    "isActive": false
+  },
+  {
+    "name": "Concordia University Chicago",
+    "isActive": false
+  },
+  {
+    "name": "Concordia University Irvine",
+    "isActive": false
+  },
+  {
+    "name": "Concordia University St. Paul",
+    "isActive": false
+  },
+  {
+    "name": "Concordia University Wisconsin",
+    "isActive": false
+  },
+  {
+    "name": "Connecticut College",
+    "isActive": false
+  },
+  {
+    "name": "Converse University",
+    "isActive": false
+  },
+  {
+    "name": "Cornell College",
+    "isActive": true,
+    "activeName": "Cornell"
+  },
+  {
+    "name": "Cornell University",
+    "isActive": true,
+    "activeName": "Cornell"
+  },
+  {
+    "name": "Cornerstone University",
+    "isActive": false
+  },
+  {
+    "name": "Cornish College of the Arts",
+    "isActive": false
+  },
+  {
+    "name": "Covenant College",
+    "isActive": false
+  },
+  {
+    "name": "Creighton University",
+    "isActive": false
+  },
+  {
+    "name": "Culinary Institute of America",
+    "isActive": false
+  },
+  {
+    "name": "Culver-Stockton College",
+    "isActive": false
+  },
+  {
+    "name": "Curry College",
+    "isActive": false
+  },
+  {
+    "name": "D'Youville College",
+    "isActive": false
+  },
+  {
+    "name": "Daemen College",
+    "isActive": false
+  },
+  {
+    "name": "Dakota Wesleyan University",
+    "isActive": false
+  },
+  {
+    "name": "Dartmouth College",
+    "isActive": true,
+    "activeName": "Dartmouth"
+  },
+  {
+    "name": "Davenport University",
+    "isActive": false
+  },
+  {
+    "name": "Davidson College",
+    "isActive": false
+  },
+  {
+    "name": "Dean College",
+    "isActive": false
+  },
+  {
+    "name": "Defiance College",
+    "isActive": false
+  },
+  {
+    "name": "Delaware State University",
+    "isActive": false
+  },
+  {
+    "name": "Delaware Valley University",
+    "isActive": false
+  },
+  {
+    "name": "Denison University",
+    "isActive": false
+  },
+  {
+    "name": "DePaul University",
+    "isActive": false
+  },
+  {
+    "name": "DePauw University",
+    "isActive": false
+  },
+  {
+    "name": "DeSales University",
+    "isActive": false
+  },
+  {
+    "name": "Dharma Realm Buddhist University",
+    "isActive": false
+  },
+  {
+    "name": "Dickinson College",
+    "isActive": false
+  },
+  {
+    "name": "Dillard University",
+    "isActive": false
+  },
+  {
+    "name": "Dominican College",
+    "isActive": false
+  },
+  {
+    "name": "Dominican University",
+    "isActive": false
+  },
+  {
+    "name": "Dominican University of California",
+    "isActive": false
+  },
+  {
+    "name": "Drake University",
+    "isActive": false
+  },
+  {
+    "name": "Drew University",
+    "isActive": false
+  },
+  {
+    "name": "Drexel University",
+    "isActive": false
+  },
+  {
+    "name": "Drury University",
+    "isActive": false
+  },
+  {
+    "name": "Duke University",
+    "isActive": true,
+    "activeName": "Duke"
+  },
+  {
+    "name": "Duquesne University",
+    "isActive": false
+  },
+  {
+    "name": "Earlham College",
+    "isActive": false
+  },
+  {
+    "name": "East Carolina University",
+    "isActive": false
+  },
+  {
+    "name": "East Stroudsburg University of Pennsylvania",
+    "isActive": false
+  },
+  {
+    "name": "Eastern Connecticut State University",
+    "isActive": false
+  },
+  {
+    "name": "Eastern Illinois University",
+    "isActive": false
+  },
+  {
+    "name": "Eastern Mennonite University",
+    "isActive": false
+  },
+  {
+    "name": "Eastern Michigan University",
+    "isActive": false
+  },
+  {
+    "name": "Eastern Nazarene College",
+    "isActive": false
+  },
+  {
+    "name": "Eastern Oregon University",
+    "isActive": false
+  },
+  {
+    "name": "Eastern Washington University",
+    "isActive": false
+  },
+  {
+    "name": "Eckerd College",
+    "isActive": false
+  },
+  {
+    "name": "Edgewood College",
+    "isActive": false
+  },
+  {
+    "name": "Elizabeth City State University",
+    "isActive": false
+  },
+  {
+    "name": "Elizabethtown College",
+    "isActive": false
+  },
+  {
+    "name": "Elmhurst University",
+    "isActive": false
+  },
+  {
+    "name": "Elmira College",
+    "isActive": false
+  },
+  {
+    "name": "Elms College",
+    "isActive": false
+  },
+  {
+    "name": "Elon University",
+    "isActive": false
+  },
+  {
+    "name": "Emerson College",
+    "isActive": false
+  },
+  {
+    "name": "Emmanuel College",
+    "isActive": false
+  },
+  {
+    "name": "Emory & Henry College",
+    "isActive": false
+  },
+  {
+    "name": "Emory University",
+    "isActive": true,
+    "activeName": "Emory"
+  },
+  {
+    "name": "Eureka College",
+    "isActive": false
+  },
+  {
+    "name": "Evangel University",
+    "isActive": false
+  },
+  {
+    "name": "Evergreen State College",
+    "isActive": false
+  },
+  {
+    "name": "Fairfield University",
+    "isActive": false
+  },
+  {
+    "name": "Fairleigh Dickinson University",
+    "isActive": false
+  },
+  {
+    "name": "Felician University",
+    "isActive": false
+  },
+  {
+    "name": "Ferrum College",
+    "isActive": false
+  },
+  {
+    "name": "Fisher College",
+    "isActive": false
+  },
+  {
+    "name": "Fisk University",
+    "isActive": false
+  },
+  {
+    "name": "Fitchburg State University",
+    "isActive": false
+  },
+  {
+    "name": "Flagler College",
+    "isActive": false
+  },
+  {
+    "name": "Florida Agricultural & Mechanical University (FAMU)",
+    "isActive": false
+  },
+  {
+    "name": "Florida Atlantic University",
+    "isActive": false
+  },
+  {
+    "name": "Florida Gulf Coast University",
+    "isActive": false
+  },
+  {
+    "name": "Florida Institute of Technology",
+    "isActive": false
+  },
+  {
+    "name": "Florida Memorial University",
+    "isActive": false
+  },
+  {
+    "name": "Florida Polytechnic University",
+    "isActive": false
+  },
+  {
+    "name": "Florida Southern College",
+    "isActive": false
+  },
+  {
+    "name": "Florida State University",
+    "isActive": false
+  },
+  {
+    "name": "Fontbonne University",
+    "isActive": false
+  },
+  {
+    "name": "Fordham University",
+    "isActive": false
+  },
+  {
+    "name": "Fort Lewis College",
+    "isActive": false
+  },
+  {
+    "name": "Framingham State University",
+    "isActive": false
+  },
+  {
+    "name": "Franklin & Marshall College",
+    "isActive": false
+  },
+  {
+    "name": "Franklin College",
+    "isActive": false
+  },
+  {
+    "name": "Franklin Pierce University",
+    "isActive": false
+  },
+  {
+    "name": "Franklin W. Olin College of Engineering",
+    "isActive": false
+  },
+  {
+    "name": "Fresno Pacific University",
+    "isActive": false
+  },
+  {
+    "name": "Frostburg State University",
+    "isActive": false
+  },
+  {
+    "name": "Furman University",
+    "isActive": false
+  },
+  {
+    "name": "Gannon University",
+    "isActive": false
+  },
+  {
+    "name": "Gardner-Webb University",
+    "isActive": false
+  },
+  {
+    "name": "George Fox University",
+    "isActive": false
+  },
+  {
+    "name": "George Mason University",
+    "isActive": false
+  },
+  {
+    "name": "George Washington University",
+    "isActive": false
+  },
+  {
+    "name": "Georgetown University",
+    "isActive": true,
+    "activeName": "Georgetown"
+  },
+  {
+    "name": "Georgia College",
+    "isActive": false
+  },
+  {
+    "name": "Georgia Institute of Technology (Georgia Tech)",
+    "isActive": false
+  },
+  {
+    "name": "Georgia State University",
+    "isActive": false
+  },
+  {
+    "name": "Georgian Court University",
+    "isActive": false
+  },
+  {
+    "name": "Gettysburg College",
+    "isActive": false
+  },
+  {
+    "name": "Goldey-Beacom College",
+    "isActive": false
+  },
+  {
+    "name": "Gonzaga University",
+    "isActive": false
+  },
+  {
+    "name": "Gordon College",
+    "isActive": false
+  },
+  {
+    "name": "Goshen College",
+    "isActive": false
+  },
+  {
+    "name": "Goucher College",
+    "isActive": false
+  },
+  {
+    "name": "Governors State University",
+    "isActive": false
+  },
+  {
+    "name": "Grace College",
+    "isActive": false
+  },
+  {
+    "name": "Grand Valley State University",
+    "isActive": false
+  },
+  {
+    "name": "Greensboro College",
+    "isActive": false
+  },
+  {
+    "name": "Greenville University",
+    "isActive": false
+  },
+  {
+    "name": "Grinnell College",
+    "isActive": false
+  },
+  {
+    "name": "Guilford College",
+    "isActive": false
+  },
+  {
+    "name": "Gustavus Adolphus College",
+    "isActive": false
+  },
+  {
+    "name": "Gwynedd Mercy University",
+    "isActive": false
+  },
+  {
+    "name": "Hamilton College",
+    "isActive": false
+  },
+  {
+    "name": "Hamline University",
+    "isActive": false
+  },
+  {
+    "name": "Hampden-Sydney College",
+    "isActive": false
+  },
+  {
+    "name": "Hampshire College",
+    "isActive": false
+  },
+  {
+    "name": "Hampton University",
+    "isActive": false
+  },
+  {
+    "name": "Hanover College",
+    "isActive": false
+  },
+  {
+    "name": "Hardin-Simmons University",
+    "isActive": false
+  },
+  {
+    "name": "Harrisburg University of Science and Technology",
+    "isActive": false
+  },
+  {
+    "name": "Hartwick College",
+    "isActive": false
+  },
+  {
+    "name": "Harvard University",
+    "isActive": true,
+    "activeName": "Harvard"
+  },
+  {
+    "name": "Harvey Mudd College",
+    "isActive": false
+  },
+  {
+    "name": "Hastings College",
+    "isActive": false
+  },
+  {
+    "name": "Haverford College",
+    "isActive": false
+  },
+  {
+    "name": "Hawaii Pacific University",
+    "isActive": false
+  },
+  {
+    "name": "Heidelberg University",
+    "isActive": false
+  },
+  {
+    "name": "Hellenic College",
+    "isActive": false
+  },
+  {
+    "name": "Hendrix College",
+    "isActive": false
+  },
+  {
+    "name": "High Point University",
+    "isActive": false
+  },
+  {
+    "name": "Hilbert College",
+    "isActive": false
+  },
+  {
+    "name": "Hillsdale College",
+    "isActive": false
+  },
+  {
+    "name": "Hiram College",
+    "isActive": false
+  },
+  {
+    "name": "Hobart and William Smith Colleges",
+    "isActive": false
+  },
+  {
+    "name": "Hofstra University",
+    "isActive": false
+  },
+  {
+    "name": "Hollins University",
+    "isActive": false
+  },
+  {
+    "name": "Holy Cross College",
+    "isActive": false
+  },
+  {
+    "name": "Holy Family University",
+    "isActive": false
+  },
+  {
+    "name": "Holy Names University",
+    "isActive": false
+  },
+  {
+    "name": "Hood College",
+    "isActive": false
+  },
+  {
+    "name": "Hope College",
+    "isActive": false
+  },
+  {
+    "name": "Houghton College",
+    "isActive": false
+  },
+  {
+    "name": "Howard University",
+    "isActive": false
+  },
+  {
+    "name": "Hult International Business School",
+    "isActive": false
+  },
+  {
+    "name": "Husson University",
+    "isActive": false
+  },
+  {
+    "name": "Illinois College",
+    "isActive": false
+  },
+  {
+    "name": "Illinois Institute of Technology",
+    "isActive": false
+  },
+  {
+    "name": "Illinois State University",
+    "isActive": false
+  },
+  {
+    "name": "Illinois Wesleyan University",
+    "isActive": false
+  },
+  {
+    "name": "Immaculata University",
+    "isActive": false
+  },
+  {
+    "name": "Indiana State University",
+    "isActive": false
+  },
+  {
+    "name": "Indiana Tech",
+    "isActive": false
+  },
+  {
+    "name": "Indiana University Bloomington",
+    "isActive": false
+  },
+  {
+    "name": "Indiana University Northwest",
+    "isActive": false
+  },
+  {
+    "name": "Indiana University-Purdue University Indianapolis (IUPUI)",
+    "isActive": false
+  },
+  {
+    "name": "Indiana Wesleyan University",
+    "isActive": false
+  },
+  {
+    "name": "Iona College",
+    "isActive": false
+  },
+  {
+    "name": "Iowa State University",
+    "isActive": false
+  },
+  {
+    "name": "Ithaca College",
+    "isActive": false
+  },
+  {
+    "name": "Jacksonville University",
+    "isActive": false
+  },
+  {
+    "name": "James Madison University",
+    "isActive": false
+  },
+  {
+    "name": "John Carroll University",
+    "isActive": false
+  },
+  {
+    "name": "Johns Hopkins University",
+    "isActive": true,
+    "activeName": "Johns Hopkins"
+  },
+  {
+    "name": "Johnson & Wales University—Charlotte",
+    "isActive": false
+  },
+  {
+    "name": "Johnson & Wales University—Providence",
+    "isActive": false
+  },
+  {
+    "name": "Juniata College",
+    "isActive": false
+  },
+  {
+    "name": "Kalamazoo College",
+    "isActive": false
+  },
+  {
+    "name": "Kansas State University",
+    "isActive": false
+  },
+  {
+    "name": "Kean University",
+    "isActive": false
+  },
+  {
+    "name": "Keene State College",
+    "isActive": false
+  },
+  {
+    "name": "Keiser University Flagship Campus—West Palm Beach",
+    "isActive": false
+  },
+  {
+    "name": "Kennesaw State University",
+    "isActive": false
+  },
+  {
+    "name": "Kent State University",
+    "isActive": false
+  },
+  {
+    "name": "Kentucky Wesleyan College",
+    "isActive": false
+  },
+  {
+    "name": "Kenyon College",
+    "isActive": false
+  },
+  {
+    "name": "Kettering University",
+    "isActive": false
+  },
+  {
+    "name": "Keuka College",
+    "isActive": false
+  },
+  {
+    "name": "Keystone College",
+    "isActive": false
+  },
+  {
+    "name": "King's College",
+    "isActive": false
+  },
+  {
+    "name": "Knox College",
+    "isActive": false
+  },
+  {
+    "name": "Kutztown University of Pennsylvania",
+    "isActive": false
+  },
+  {
+    "name": "La Roche University",
+    "isActive": false
+  },
+  {
+    "name": "La Salle University",
+    "isActive": false
+  },
+  {
+    "name": "Lafayette College",
+    "isActive": false
+  },
+  {
+    "name": "Lake Erie College",
+    "isActive": false
+  },
+  {
+    "name": "Lake Forest College",
+    "isActive": false
+  },
+  {
+    "name": "Lake Superior State College",
+    "isActive": false
+  },
+  {
+    "name": "Landmark College",
+    "isActive": false
+  },
+  {
+    "name": "Lasell University",
+    "isActive": false
+  },
+  {
+    "name": "Lawrence Technological University",
+    "isActive": false
+  },
+  {
+    "name": "Lawrence University",
+    "isActive": false
+  },
+  {
+    "name": "Le Moyne College",
+    "isActive": false
+  },
+  {
+    "name": "Lebanon Valley College",
+    "isActive": false
+  },
+  {
+    "name": "Lees-McRae College",
+    "isActive": false
+  },
+  {
+    "name": "Lehigh University",
+    "isActive": false
+  },
+  {
+    "name": "Lesley University",
+    "isActive": false
+  },
+  {
+    "name": "Lewis & Clark College",
+    "isActive": false
+  },
+  {
+    "name": "Lewis University",
+    "isActive": false
+  },
+  {
+    "name": "Limestone University",
+    "isActive": false
+  },
+  {
+    "name": "Lincoln Memorial University",
+    "isActive": false
+  },
+  {
+    "name": "Lincoln University of Pennsylvania",
+    "isActive": false
+  },
+  {
+    "name": "Lindenwood University",
+    "isActive": false
+  },
+  {
+    "name": "Linfield College",
+    "isActive": false
+  },
+  {
+    "name": "Lipscomb University",
+    "isActive": false
+  },
+  {
+    "name": "List College—The Jewish Theological Seminary",
+    "isActive": false
+  },
+  {
+    "name": "Long Island University",
+    "isActive": false
+  },
+  {
+    "name": "Longwood University",
+    "isActive": false
+  },
+  {
+    "name": "Loras College",
+    "isActive": false
+  },
+  {
+    "name": "Louisiana State University A&M—Baton Rouge",
+    "isActive": false
+  },
+  {
+    "name": "Lourdes University",
+    "isActive": false
+  },
+  {
+    "name": "Loyola Marymount University",
+    "isActive": false
+  },
+  {
+    "name": "Loyola University Chicago",
+    "isActive": false
+  },
+  {
+    "name": "Loyola University Maryland",
+    "isActive": false
+  },
+  {
+    "name": "Loyola University New Orleans",
+    "isActive": false
+  },
+  {
+    "name": "Luther College",
+    "isActive": false
+  },
+  {
+    "name": "Lycoming College",
+    "isActive": false
+  },
+  {
+    "name": "Lynn University",
+    "isActive": false
+  },
+  {
+    "name": "Lyon College",
+    "isActive": false
+  },
+  {
+    "name": "Macalester College",
+    "isActive": false
+  },
+  {
+    "name": "Madonna University",
+    "isActive": false
+  },
+  {
+    "name": "Maine College of Art",
+    "isActive": false
+  },
+  {
+    "name": "Maine Maritime Academy",
+    "isActive": false
+  },
+  {
+    "name": "Malone University",
+    "isActive": false
+  },
+  {
+    "name": "Manchester University",
+    "isActive": false
+  },
+  {
+    "name": "Manhattan College",
+    "isActive": false
+  },
+  {
+    "name": "Manhattanville College",
+    "isActive": false
+  },
+  {
+    "name": "Manor College",
+    "isActive": false
+  },
+  {
+    "name": "Marian University",
+    "isActive": false
+  },
+  {
+    "name": "Marietta College",
+    "isActive": false
+  },
+  {
+    "name": "Marist College",
+    "isActive": false
+  },
+  {
+    "name": "Marquette University",
+    "isActive": false
+  },
+  {
+    "name": "Marshall University",
+    "isActive": false
+  },
+  {
+    "name": "Mary Baldwin University",
+    "isActive": false
+  },
+  {
+    "name": "Maryland Institute College of Art",
+    "isActive": false
+  },
+  {
+    "name": "Marymount Manhattan College",
+    "isActive": false
+  },
+  {
+    "name": "Marymount University",
+    "isActive": false
+  },
+  {
+    "name": "Maryville University of St. Louis",
+    "isActive": false
+  },
+  {
+    "name": "Marywood University",
+    "isActive": false
+  },
+  {
+    "name": "Massachusetts College of Art and Design",
+    "isActive": false
+  },
+  {
+    "name": "Massachusetts College of Liberal Arts",
+    "isActive": false
+  },
+  {
+    "name": "Massachusetts College of Pharmacy and Health Sciences (MCPHS University)",
+    "isActive": false
+  },
+  {
+    "name": "Massachusetts Institute of Technology (MIT)",
+    "isActive": true,
+    "activeName": "MIT"
+  },
+  {
+    "name": "Massachusetts Maritime Academy",
+    "isActive": false
+  },
+  {
+    "name": "Master's University",
+    "isActive": false
+  },
+  {
+    "name": "McDaniel College",
+    "isActive": false
+  },
+  {
+    "name": "McKendree University",
+    "isActive": false
+  },
+  {
+    "name": "McMurry University",
+    "isActive": false
+  },
+  {
+    "name": "McPherson College",
+    "isActive": false
+  },
+  {
+    "name": "Medaille College",
+    "isActive": false
+  },
+  {
+    "name": "Menlo College",
+    "isActive": false
+  },
+  {
+    "name": "Mercer University",
+    "isActive": false
+  },
+  {
+    "name": "Mercy College",
+    "isActive": false
+  },
+  {
+    "name": "Mercyhurst University",
+    "isActive": false
+  },
+  {
+    "name": "Meredith College",
+    "isActive": false
+  },
+  {
+    "name": "Merrimack College",
+    "isActive": false
+  },
+  {
+    "name": "Messiah University",
+    "isActive": false
+  },
+  {
+    "name": "Methodist University",
+    "isActive": false
+  },
+  {
+    "name": "Metropolitan State University of Denver",
+    "isActive": false
+  },
+  {
+    "name": "Miami University",
+    "isActive": false
+  },
+  {
+    "name": "Michigan State University",
+    "isActive": false
+  },
+  {
+    "name": "Michigan Technological University",
+    "isActive": false
+  },
+  {
+    "name": "Middle Tennessee State University",
+    "isActive": false
+  },
+  {
+    "name": "Middlebury College",
+    "isActive": false
+  },
+  {
+    "name": "Midway University",
+    "isActive": false
+  },
+  {
+    "name": "Millersville University",
+    "isActive": false
+  },
+  {
+    "name": "Milligan University",
+    "isActive": false
+  },
+  {
+    "name": "Millikin University",
+    "isActive": false
+  },
+  {
+    "name": "Millsaps College",
+    "isActive": false
+  },
+  {
+    "name": "Milwaukee School of Engineering",
+    "isActive": false
+  },
+  {
+    "name": "Minerva Schools at KGI",
+    "isActive": false
+  },
+  {
+    "name": "Misericordia University",
+    "isActive": false
+  },
+  {
+    "name": "Mississippi College",
+    "isActive": false
+  },
+  {
+    "name": "Mississippi State University",
+    "isActive": false
+  },
+  {
+    "name": "Missouri Southern State University",
+    "isActive": false
+  },
+  {
+    "name": "Missouri State University",
+    "isActive": false
+  },
+  {
+    "name": "Missouri University of Science and Technology",
+    "isActive": false
+  },
+  {
+    "name": "Mitchell College",
+    "isActive": false
+  },
+  {
+    "name": "Molloy College",
+    "isActive": false
+  },
+  {
+    "name": "Monmouth College",
+    "isActive": false
+  },
+  {
+    "name": "Monmouth University",
+    "isActive": false
+  },
+  {
+    "name": "Montclair State University",
+    "isActive": false
+  },
+  {
+    "name": "Montreat College",
+    "isActive": false
+  },
+  {
+    "name": "Montserrat College of Art",
+    "isActive": false
+  },
+  {
+    "name": "Moore College of Art and Design",
+    "isActive": false
+  },
+  {
+    "name": "Moravian College",
+    "isActive": false
+  },
+  {
+    "name": "Morehouse College",
+    "isActive": false
+  },
+  {
+    "name": "Morgan State University",
+    "isActive": false
+  },
+  {
+    "name": "Morningside College",
+    "isActive": false
+  },
+  {
+    "name": "Mount Aloysius College",
+    "isActive": false
+  },
+  {
+    "name": "Mount Holyoke College",
+    "isActive": false
+  },
+  {
+    "name": "Mount Marty University",
+    "isActive": false
+  },
+  {
+    "name": "Mount Mary University",
+    "isActive": false
+  },
+  {
+    "name": "Mount Saint Mary College",
+    "isActive": false
+  },
+  {
+    "name": "Mount St. Joseph University",
+    "isActive": false
+  },
+  {
+    "name": "Mount St. Mary's University",
+    "isActive": false
+  },
+  {
+    "name": "Mount Vernon Nazarene University",
+    "isActive": false
+  },
+  {
+    "name": "Muhlenberg College",
+    "isActive": false
+  },
+  {
+    "name": "Muskingum University",
+    "isActive": false
+  },
+  {
+    "name": "Naropa University",
+    "isActive": false
+  },
+  {
+    "name": "National Louis University",
+    "isActive": false
+  },
+  {
+    "name": "Nazareth College",
+    "isActive": false
+  },
+  {
+    "name": "Nebraska Wesleyan University",
+    "isActive": false
+  },
+  {
+    "name": "Neumann University",
+    "isActive": false
+  },
+  {
+    "name": "New College of Florida",
+    "isActive": false
+  },
+  {
+    "name": "New England College",
+    "isActive": false
+  },
+  {
+    "name": "New England Institute of Technology",
+    "isActive": false
+  },
+  {
+    "name": "New Jersey City University",
+    "isActive": false
+  },
+  {
+    "name": "New Jersey Institute of Technology",
+    "isActive": false
+  },
+  {
+    "name": "New York Institute of Technology",
+    "isActive": false
+  },
+  {
+    "name": "New York School of Career & Applied Studies of Touro College & University System",
+    "isActive": false
+  },
+  {
+    "name": "New York University (NYU)",
+    "isActive": false
+  },
+  {
+    "name": "Newberry College",
+    "isActive": false
+  },
+  {
+    "name": "Niagara University",
+    "isActive": false
+  },
+  {
+    "name": "Nichols College",
+    "isActive": false
+  },
+  {
+    "name": "Norfolk State University",
+    "isActive": false
+  },
+  {
+    "name": "North Carolina A&T State University",
+    "isActive": false
+  },
+  {
+    "name": "North Carolina State University",
+    "isActive": false
+  },
+  {
+    "name": "North Central College",
+    "isActive": false
+  },
+  {
+    "name": "North Park University",
+    "isActive": false
+  },
+  {
+    "name": "Northeastern Illinois University",
+    "isActive": false
+  },
+  {
+    "name": "Northeastern University",
+    "isActive": false
+  },
+  {
+    "name": "Northern Illinois University",
+    "isActive": false
+  },
+  {
+    "name": "Northern Kentucky University",
+    "isActive": false
+  },
+  {
+    "name": "Northern Vermont University",
+    "isActive": false
+  },
+  {
+    "name": "Northland College",
+    "isActive": false
+  },
+  {
+    "name": "Northwest Nazarene University",
+    "isActive": false
+  },
+  {
+    "name": "Northwest University",
+    "isActive": false
+  },
+  {
+    "name": "Northwestern University",
+    "isActive": true,
+    "activeName": "Northwestern"
+  },
+  {
+    "name": "Northwood University",
+    "isActive": false
+  },
+  {
+    "name": "Norwich University",
+    "isActive": false
+  },
+  {
+    "name": "Notre Dame College",
+    "isActive": false
+  },
+  {
+    "name": "Notre Dame of Maryland University",
+    "isActive": false
+  },
+  {
+    "name": "Nova Southeastern University",
+    "isActive": false
+  },
+  {
+    "name": "Oberlin College of Arts and Sciences",
+    "isActive": false
+  },
+  {
+    "name": "Oberlin Conservatory of Music",
+    "isActive": false
+  },
+  {
+    "name": "Occidental College",
+    "isActive": false
+  },
+  {
+    "name": "Oglethorpe University",
+    "isActive": false
+  },
+  {
+    "name": "Ohio Northern University",
+    "isActive": false
+  },
+  {
+    "name": "Ohio University",
+    "isActive": false
+  },
+  {
+    "name": "Ohio Wesleyan University",
+    "isActive": false
+  },
+  {
+    "name": "Oklahoma City University",
+    "isActive": false
+  },
+  {
+    "name": "Old Dominion University",
+    "isActive": false
+  },
+  {
+    "name": "Olivet College",
+    "isActive": false
+  },
+  {
+    "name": "Oral Roberts University",
+    "isActive": false
+  },
+  {
+    "name": "Oregon State University",
+    "isActive": false
+  },
+  {
+    "name": "Oregon Tech",
+    "isActive": false
+  },
+  {
+    "name": "Otis College of Art and Design",
+    "isActive": false
+  },
+  {
+    "name": "Otterbein University",
+    "isActive": false
+  },
+  {
+    "name": "Pace University",
+    "isActive": false
+  },
+  {
+    "name": "Pacific Lutheran University",
+    "isActive": false
+  },
+  {
+    "name": "Pacific University Oregon",
+    "isActive": false
+  },
+  {
+    "name": "Palm Beach Atlantic University",
+    "isActive": false
+  },
+  {
+    "name": "Paul Smith's College",
+    "isActive": false
+  },
+  {
+    "name": "Pennsylvania Academy of the Fine Arts",
+    "isActive": false
+  },
+  {
+    "name": "Pennsylvania College of Art and Design",
+    "isActive": false
+  },
+  {
+    "name": "Pennsylvania College of Technology",
+    "isActive": false
+  },
+  {
+    "name": "Pennsylvania State University (Penn State)",
+    "isActive": false
+  },
+  {
+    "name": "Pennsylvania Western University",
+    "isActive": false
+  },
+  {
+    "name": "Pepperdine University",
+    "isActive": false
+  },
+  {
+    "name": "Piedmont College",
+    "isActive": false
+  },
+  {
+    "name": "Pitzer College",
+    "isActive": false
+  },
+  {
+    "name": "Plymouth State University",
+    "isActive": false
+  },
+  {
+    "name": "Point Loma Nazarene University",
+    "isActive": false
+  },
+  {
+    "name": "Point Park University",
+    "isActive": false
+  },
+  {
+    "name": "Pomona College",
+    "isActive": false
+  },
+  {
+    "name": "Portland State University",
+    "isActive": false
+  },
+  {
+    "name": "Pratt Institute",
+    "isActive": false
+  },
+  {
+    "name": "Presbyterian College",
+    "isActive": false
+  },
+  {
+    "name": "Prescott College",
+    "isActive": false
+  },
+  {
+    "name": "Princeton University",
+    "isActive": true,
+    "activeName": "Princeton"
+  },
+  {
+    "name": "Principia College",
+    "isActive": false
+  },
+  {
+    "name": "Providence College",
+    "isActive": false
+  },
+  {
+    "name": "Purdue University",
+    "isActive": false
+  },
+  {
+    "name": "Purdue University Fort Wayne",
+    "isActive": false
+  },
+  {
+    "name": "Queens University of Charlotte",
+    "isActive": false
+  },
+  {
+    "name": "Quincy University",
+    "isActive": false
+  },
+  {
+    "name": "Quinnipiac University",
+    "isActive": false
+  },
+  {
+    "name": "Radford University",
+    "isActive": false
+  },
+  {
+    "name": "Ramapo College of New Jersey",
+    "isActive": false
+  },
+  {
+    "name": "Randolph College",
+    "isActive": false
+  },
+  {
+    "name": "Randolph-Macon College",
+    "isActive": false
+  },
+  {
+    "name": "Reed College",
+    "isActive": false
+  },
+  {
+    "name": "Regent University",
+    "isActive": false
+  },
+  {
+    "name": "Regis College",
+    "isActive": false
+  },
+  {
+    "name": "Regis University",
+    "isActive": false
+  },
+  {
+    "name": "Rensselaer Polytechnic Institute (RPI)",
+    "isActive": false
+  },
+  {
+    "name": "Rhode Island College",
+    "isActive": false
+  },
+  {
+    "name": "Rhode Island School of Design",
+    "isActive": false
+  },
+  {
+    "name": "Rhodes College",
+    "isActive": false
+  },
+  {
+    "name": "Rice University",
+    "isActive": true,
+    "activeName": "Rice"
+  },
+  {
+    "name": "Richard Bland College of William and Mary",
+    "isActive": false
+  },
+  {
+    "name": "Rider University",
+    "isActive": false
+  },
+  {
+    "name": "Ringling College of Art and Design",
+    "isActive": false
+  },
+  {
+    "name": "Ripon College",
+    "isActive": false
+  },
+  {
+    "name": "Rivier University",
+    "isActive": false
+  },
+  {
+    "name": "Roanoke College",
+    "isActive": false
+  },
+  {
+    "name": "Robert Morris University",
+    "isActive": false
+  },
+  {
+    "name": "Roberts Wesleyan College",
+    "isActive": false
+  },
+  {
+    "name": "Rochester Institute of Technology",
+    "isActive": false
+  },
+  {
+    "name": "Rockford University",
+    "isActive": false
+  },
+  {
+    "name": "Rockhurst University",
+    "isActive": false
+  },
+  {
+    "name": "Roger Williams University",
+    "isActive": false
+  },
+  {
+    "name": "Rollins College",
+    "isActive": false
+  },
+  {
+    "name": "Rose-Hulman Institute of Technology",
+    "isActive": false
+  },
+  {
+    "name": "Rosemont College",
+    "isActive": false
+  },
+  {
+    "name": "Rowan University",
+    "isActive": false
+  },
+  {
+    "name": "Russell Sage College",
+    "isActive": false
+  },
+  {
+    "name": "Sacred Heart University",
+    "isActive": false
+  },
+  {
+    "name": "Saginaw Valley State University",
+    "isActive": false
+  },
+  {
+    "name": "Saint Anselm College",
+    "isActive": false
+  },
+  {
+    "name": "Saint Augustine's University",
+    "isActive": false
+  },
+  {
+    "name": "Saint Elizabeth University",
+    "isActive": false
+  },
+  {
+    "name": "Saint Francis University",
+    "isActive": false
+  },
+  {
+    "name": "Saint John's University",
+    "isActive": false
+  },
+  {
+    "name": "Saint Joseph's College of Maine",
+    "isActive": false
+  },
+  {
+    "name": "Saint Joseph's University",
+    "isActive": false
+  },
+  {
+    "name": "Saint Leo University",
+    "isActive": false
+  },
+  {
+    "name": "Saint Louis University",
+    "isActive": false
+  },
+  {
+    "name": "Saint Martin's University",
+    "isActive": false
+  },
+  {
+    "name": "Saint Mary-of-the-Woods College",
+    "isActive": false
+  },
+  {
+    "name": "Saint Mary's College of California",
+    "isActive": false
+  },
+  {
+    "name": "Saint Mary's College of Indiana",
+    "isActive": false
+  },
+  {
+    "name": "Saint Mary's University of Minnesota",
+    "isActive": false
+  },
+  {
+    "name": "Saint Michael's College",
+    "isActive": false
+  },
+  {
+    "name": "Saint Peter's University",
+    "isActive": false
+  },
+  {
+    "name": "Saint Vincent College",
+    "isActive": false
+  },
+  {
+    "name": "Saint Xavier University",
+    "isActive": false
+  },
+  {
+    "name": "Salem College",
+    "isActive": false
+  },
+  {
+    "name": "Salisbury University",
+    "isActive": false
+  },
+  {
+    "name": "Salve Regina University",
+    "isActive": false
+  },
+  {
+    "name": "Samford University",
+    "isActive": false
+  },
+  {
+    "name": "Santa Clara University",
+    "isActive": false
+  },
+  {
+    "name": "Sarah Lawrence College",
+    "isActive": false
+  },
+  {
+    "name": "Savannah College of Art and Design",
+    "isActive": false
+  },
+  {
+    "name": "Savannah State University",
+    "isActive": false
+  },
+  {
+    "name": "School of the Art Institute of Chicago",
+    "isActive": false
+  },
+  {
+    "name": "Scripps College",
+    "isActive": false
+  },
+  {
+    "name": "Seattle Pacific University",
+    "isActive": false
+  },
+  {
+    "name": "Seattle University",
+    "isActive": false
+  },
+  {
+    "name": "Seton Hall University",
+    "isActive": false
+  },
+  {
+    "name": "Seton Hill University",
+    "isActive": false
+  },
+  {
+    "name": "Sewanee: The University of the South",
+    "isActive": false
+  },
+  {
+    "name": "Shawnee State University",
+    "isActive": false
+  },
+  {
+    "name": "Shenandoah University",
+    "isActive": false
+  },
+  {
+    "name": "Shepherd University",
+    "isActive": false
+  },
+  {
+    "name": "Shippensburg University of Pennsylvania",
+    "isActive": false
+  },
+  {
+    "name": "Siena College",
+    "isActive": false
+  },
+  {
+    "name": "Simmons University",
+    "isActive": false
+  },
+  {
+    "name": "Simpson College",
+    "isActive": false
+  },
+  {
+    "name": "Simpson University",
+    "isActive": false
+  },
+  {
+    "name": "Skidmore College",
+    "isActive": false
+  },
+  {
+    "name": "Smith College",
+    "isActive": false
+  },
+  {
+    "name": "Soka University of America",
+    "isActive": false
+  },
+  {
+    "name": "South Carolina State University",
+    "isActive": false
+  },
+  {
+    "name": "Southeast Missouri State University",
+    "isActive": false
+  },
+  {
+    "name": "Southern California Institute of Architecture",
+    "isActive": false
+  },
+  {
+    "name": "Southern Connecticut State University",
+    "isActive": false
+  },
+  {
+    "name": "Southern Illinois University Carbondale",
+    "isActive": false
+  },
+  {
+    "name": "Southern Illinois University Edwardsville",
+    "isActive": false
+  },
+  {
+    "name": "Southern Methodist University",
+    "isActive": false
+  },
+  {
+    "name": "Southern New Hampshire University",
+    "isActive": false
+  },
+  {
+    "name": "Southwestern University",
+    "isActive": false
+  },
+  {
+    "name": "Spalding University",
+    "isActive": false
+  },
+  {
+    "name": "Spartanburg Methodist College",
+    "isActive": false
+  },
+  {
+    "name": "Spelman College",
+    "isActive": false
+  },
+  {
+    "name": "Spring Arbor University",
+    "isActive": false
+  },
+  {
+    "name": "Spring Hill College",
+    "isActive": false
+  },
+  {
+    "name": "Springfield College",
+    "isActive": false
+  },
+  {
+    "name": "St. Ambrose University",
+    "isActive": false
+  },
+  {
+    "name": "St. Andrews University",
+    "isActive": false
+  },
+  {
+    "name": "St. Bonaventure University",
+    "isActive": false
+  },
+  {
+    "name": "St. Catherine University",
+    "isActive": false
+  },
+  {
+    "name": "St. Edward's University",
+    "isActive": false
+  },
+  {
+    "name": "St. Francis College",
+    "isActive": false
+  },
+  {
+    "name": "St. John Fisher College",
+    "isActive": false
+  },
+  {
+    "name": "St. John's College",
+    "isActive": false
+  },
+  {
+    "name": "St. John's University",
+    "isActive": false
+  },
+  {
+    "name": "St. Joseph's College—Brooklyn",
+    "isActive": false
+  },
+  {
+    "name": "St. Joseph's College—Long Island",
+    "isActive": false
+  },
+  {
+    "name": "St. Lawrence University",
+    "isActive": false
+  },
+  {
+    "name": "St. Mary's College of Maryland",
+    "isActive": false
+  },
+  {
+    "name": "St. Mary's University",
+    "isActive": false
+  },
+  {
+    "name": "St. Norbert College",
+    "isActive": false
+  },
+  {
+    "name": "St. Olaf College",
+    "isActive": false
+  },
+  {
+    "name": "St. Thomas Aquinas College",
+    "isActive": false
+  },
+  {
+    "name": "St. Thomas University",
+    "isActive": false
+  },
+  {
+    "name": "Stanford University",
+    "isActive": true,
+    "activeName": "Stanford"
+  },
+  {
+    "name": "Stephens College",
+    "isActive": false
+  },
+  {
+    "name": "Sterling College",
+    "isActive": false
+  },
+  {
+    "name": "Stetson University",
+    "isActive": false
+  },
+  {
+    "name": "Stevens Institute of Technology",
+    "isActive": false
+  },
+  {
+    "name": "Stevenson University",
+    "isActive": false
+  },
+  {
+    "name": "Stockton University",
+    "isActive": false
+  },
+  {
+    "name": "Stonehill College",
+    "isActive": false
+  },
+  {
+    "name": "Suffolk University",
+    "isActive": false
+  },
+  {
+    "name": "SUNY Alfred State College",
+    "isActive": false
+  },
+  {
+    "name": "SUNY Binghamton University",
+    "isActive": false
+  },
+  {
+    "name": "SUNY Buffalo State College",
+    "isActive": false
+  },
+  {
+    "name": "SUNY College at Brockport",
+    "isActive": false
+  },
+  {
+    "name": "SUNY College at Geneseo",
+    "isActive": false
+  },
+  {
+    "name": "SUNY College at Old Westbury",
+    "isActive": false
+  },
+  {
+    "name": "SUNY College at Oneonta",
+    "isActive": false
+  },
+  {
+    "name": "SUNY College of Environmental Science & Forestry",
+    "isActive": false
+  },
+  {
+    "name": "SUNY College of Technology at Canton",
+    "isActive": false
+  },
+  {
+    "name": "SUNY Farmingdale State College",
+    "isActive": false
+  },
+  {
+    "name": "SUNY Maritime College",
+    "isActive": false
+  },
+  {
+    "name": "SUNY Morrisville State College",
+    "isActive": false
+  },
+  {
+    "name": "SUNY Polytechnic Institute",
+    "isActive": false
+  },
+  {
+    "name": "SUNY Purchase College",
+    "isActive": false
+  },
+  {
+    "name": "SUNY Stony Brook University",
+    "isActive": false
+  },
+  {
+    "name": "SUNY University at Albany",
+    "isActive": false
+  },
+  {
+    "name": "SUNY University at Buffalo",
+    "isActive": false
+  },
+  {
+    "name": "Susquehanna University",
+    "isActive": false
+  },
+  {
+    "name": "Swarthmore College",
+    "isActive": false
+  },
+  {
+    "name": "Sweet Briar College",
+    "isActive": false
+  },
+  {
+    "name": "Syracuse University",
+    "isActive": false
+  },
+  {
+    "name": "Tarleton State University",
+    "isActive": false
+  },
+  {
+    "name": "Taylor University",
+    "isActive": false
+  },
+  {
+    "name": "Temple University",
+    "isActive": false
+  },
+  {
+    "name": "Texas A&M University",
+    "isActive": false
+  },
+  {
+    "name": "Texas A&M University--Commerce",
+    "isActive": false
+  },
+  {
+    "name": "Texas Christian University",
+    "isActive": false
+  },
+  {
+    "name": "Texas Lutheran University",
+    "isActive": false
+  },
+  {
+    "name": "Texas State University",
+    "isActive": false
+  },
+  {
+    "name": "Texas Tech University",
+    "isActive": false
+  },
+  {
+    "name": "Texas Wesleyan University",
+    "isActive": false
+  },
+  {
+    "name": "The American Musical and Dramatic Academy",
+    "isActive": false
+  },
+  {
+    "name": "The Catholic University of America",
+    "isActive": false
+  },
+  {
+    "name": "The College of Idaho",
+    "isActive": false
+  },
+  {
+    "name": "The College of New Jersey",
+    "isActive": false
+  },
+  {
+    "name": "The College of Saint Rose",
+    "isActive": false
+  },
+  {
+    "name": "The Culinary Institute of America",
+    "isActive": false
+  },
+  {
+    "name": "The New School",
+    "isActive": false
+  },
+  {
+    "name": "The Ohio State University",
+    "isActive": false
+  },
+  {
+    "name": "The University of Findlay",
+    "isActive": false
+  },
+  {
+    "name": "The University of Oklahoma",
+    "isActive": false
+  },
+  {
+    "name": "The University of Scranton",
+    "isActive": false
+  },
+  {
+    "name": "The University of Tennessee Knoxville",
+    "isActive": false
+  },
+  {
+    "name": "The University of Toledo",
+    "isActive": false
+  },
+  {
+    "name": "The University of Tulsa",
+    "isActive": false
+  },
+  {
+    "name": "The University of Virginia's College at Wise",
+    "isActive": false
+  },
+  {
+    "name": "Thiel College",
+    "isActive": false
+  },
+  {
+    "name": "Thomas College",
+    "isActive": false
+  },
+  {
+    "name": "Thomas Edison State University",
+    "isActive": false
+  },
+  {
+    "name": "Thomas Jefferson University",
+    "isActive": false
+  },
+  {
+    "name": "Thomas More University",
+    "isActive": false
+  },
+  {
+    "name": "Tiffin University",
+    "isActive": false
+  },
+  {
+    "name": "Towson University",
+    "isActive": false
+  },
+  {
+    "name": "Transylvania University",
+    "isActive": false
+  },
+  {
+    "name": "Trevecca Nazarene University",
+    "isActive": false
+  },
+  {
+    "name": "Trine University",
+    "isActive": false
+  },
+  {
+    "name": "Trinity Christian College",
+    "isActive": false
+  },
+  {
+    "name": "Trinity College",
+    "isActive": false
+  },
+  {
+    "name": "Trinity University",
+    "isActive": false
+  },
+  {
+    "name": "Trinity Washington University",
+    "isActive": false
+  },
+  {
+    "name": "Truman State University",
+    "isActive": false
+  },
+  {
+    "name": "Tufts University",
+    "isActive": false
+  },
+  {
+    "name": "Tulane University",
+    "isActive": false
+  },
+  {
+    "name": "Tuskegee University",
+    "isActive": false
+  },
+  {
+    "name": "Union College",
+    "isActive": false
+  },
+  {
+    "name": "United States Sports Academy",
+    "isActive": false
+  },
+  {
+    "name": "Unity College",
+    "isActive": false
+  },
+  {
+    "name": "University of Akron",
+    "isActive": false
+  },
+  {
+    "name": "University of Alabama",
+    "isActive": false
+  },
+  {
+    "name": "University of Alabama at Birmingham",
+    "isActive": false
+  },
+  {
+    "name": "University of Arizona",
+    "isActive": false
+  },
+  {
+    "name": "University of Arkansas",
+    "isActive": false
+  },
+  {
+    "name": "University of Bridgeport",
+    "isActive": false
+  },
+  {
+    "name": "University of California, Berkeley",
+    "isActive": true,
+    "activeName": "UC Berkeley"
+  },
+  {
+    "name": "University of California, Los Angeles (UCLA)",
+    "isActive": true,
+    "activeName": "UCLA"
+  },
+  {
+    "name": "University of California, San Diego (UC San Diego)",
+    "isActive": true,
+    "activeName": "UC San Diego (UCSD)"
+  },
+  {
+    "name": "University of Central Florida",
+    "isActive": false
+  },
+  {
+    "name": "University of Central Missouri",
+    "isActive": false
+  },
+  {
+    "name": "University of Charleston",
+    "isActive": false
+  },
+  {
+    "name": "University of Chicago",
+    "isActive": true,
+    "activeName": "University of Chicago"
+  },
+  {
+    "name": "University of Cincinnati",
+    "isActive": false
+  },
+  {
+    "name": "University of Colorado Boulder",
+    "isActive": false
+  },
+  {
+    "name": "University of Colorado Colorado Springs",
+    "isActive": false
+  },
+  {
+    "name": "University of Connecticut",
+    "isActive": false
+  },
+  {
+    "name": "University of Dallas",
+    "isActive": false
+  },
+  {
+    "name": "University of Dayton",
+    "isActive": false
+  },
+  {
+    "name": "University of Delaware",
+    "isActive": false
+  },
+  {
+    "name": "University of Denver",
+    "isActive": false
+  },
+  {
+    "name": "University of Detroit Mercy",
+    "isActive": false
+  },
+  {
+    "name": "University of Dubuque",
+    "isActive": false
+  },
+  {
+    "name": "University of Evansville",
+    "isActive": false
+  },
+  {
+    "name": "University of Florida",
+    "isActive": true,
+    "activeName": "University of Florida (UF)"
+  },
+  {
+    "name": "University of Georgia",
+    "isActive": false
+  },
+  {
+    "name": "University of Hartford",
+    "isActive": false
+  },
+  {
+    "name": "University of Health Sciences and Pharmacy",
+    "isActive": false
+  },
+  {
+    "name": "University of Houston",
+    "isActive": false
+  },
+  {
+    "name": "University of Idaho",
+    "isActive": false
+  },
+  {
+    "name": "University of Illinois at Chicago",
+    "isActive": false
+  },
+  {
+    "name": "University of Illinois Springfield",
+    "isActive": false
+  },
+  {
+    "name": "University of Illinois Urbana-Champaign",
+    "isActive": false
+  },
+  {
+    "name": "University of Indianapolis",
+    "isActive": false
+  },
+  {
+    "name": "University of Iowa",
+    "isActive": false
+  },
+  {
+    "name": "University of Kansas",
+    "isActive": false
+  },
+  {
+    "name": "University of Kentucky",
+    "isActive": false
+  },
+  {
+    "name": "University of La Verne",
+    "isActive": false
+  },
+  {
+    "name": "University of Louisville",
+    "isActive": false
+  },
+  {
+    "name": "University of Lynchburg",
+    "isActive": false
+  },
+  {
+    "name": "University of Maine",
+    "isActive": false
+  },
+  {
+    "name": "University of Maine at Augusta",
+    "isActive": false
+  },
+  {
+    "name": "University of Maine at Farmington",
+    "isActive": false
+  },
+  {
+    "name": "University of Maine at Fort Kent",
+    "isActive": false
+  },
+  {
+    "name": "University of Maine at Machias",
+    "isActive": false
+  },
+  {
+    "name": "University of Maine at Presque Isle",
+    "isActive": false
+  },
+  {
+    "name": "University of Mary Washington",
+    "isActive": false
+  },
+  {
+    "name": "University of Maryland",
+    "isActive": false
+  },
+  {
+    "name": "University of Massachusetts Amherst",
+    "isActive": false
+  },
+  {
+    "name": "University of Massachusetts Boston",
+    "isActive": false
+  },
+  {
+    "name": "University of Massachusetts Dartmouth",
+    "isActive": false
+  },
+  {
+    "name": "University of Massachusetts Lowell",
+    "isActive": false
+  },
+  {
+    "name": "University of Miami",
+    "isActive": false
+  },
+  {
+    "name": "University of Michigan",
+    "isActive": true,
+    "activeName": "University of Michigan"
+  },
+  {
+    "name": "University of Michigan—Dearborn",
+    "isActive": false
+  },
+  {
+    "name": "University of Michigan—Flint",
+    "isActive": false
+  },
+  {
+    "name": "University of Minnesota Crookston",
+    "isActive": false
+  },
+  {
+    "name": "University of Minnesota Duluth",
+    "isActive": false
+  },
+  {
+    "name": "University of Minnesota Morris",
+    "isActive": false
+  },
+  {
+    "name": "University of Minnesota Rochester",
+    "isActive": false
+  },
+  {
+    "name": "University of Minnesota Twin Cities",
+    "isActive": false
+  },
+  {
+    "name": "University of Mississippi (Ole Miss)",
+    "isActive": false
+  },
+  {
+    "name": "University of Missouri",
+    "isActive": false
+  },
+  {
+    "name": "University of Missouri—Kansas City",
+    "isActive": false
+  },
+  {
+    "name": "University of Missouri—St. Louis",
+    "isActive": false
+  },
+  {
+    "name": "University of Montana",
+    "isActive": false
+  },
+  {
+    "name": "University of Mount Union",
+    "isActive": false
+  },
+  {
+    "name": "University of Nebraska—Lincoln",
+    "isActive": false
+  },
+  {
+    "name": "University of New England",
+    "isActive": false
+  },
+  {
+    "name": "University of New Hampshire",
+    "isActive": false
+  },
+  {
+    "name": "University of New Haven",
+    "isActive": false
+  },
+  {
+    "name": "University of New Orleans",
+    "isActive": false
+  },
+  {
+    "name": "University of North Carolina Asheville",
+    "isActive": false
+  },
+  {
+    "name": "University of North Carolina at Chapel Hill",
+    "isActive": true,
+    "activeName": "UNC Chapel Hill"
+  },
+  {
+    "name": "University of North Carolina at Chapel Hill (UNC)",
+    "isActive": false
+  },
+  {
+    "name": "University of North Carolina at Charlotte",
+    "isActive": false
+  },
+  {
+    "name": "University of North Carolina Greensboro",
+    "isActive": false
+  },
+  {
+    "name": "University of North Carolina Pembroke",
+    "isActive": false
+  },
+  {
+    "name": "University of North Carolina Wilmington",
+    "isActive": false
+  },
+  {
+    "name": "University of North Dakota",
+    "isActive": false
+  },
+  {
+    "name": "University of North Florida",
+    "isActive": false
+  },
+  {
+    "name": "University of North Georgia",
+    "isActive": false
+  },
+  {
+    "name": "University of North Texas",
+    "isActive": false
+  },
+  {
+    "name": "University of Northern Colorado",
+    "isActive": false
+  },
+  {
+    "name": "University of Northern Iowa",
+    "isActive": false
+  },
+  {
+    "name": "University of Northwestern-St. Paul",
+    "isActive": false
+  },
+  {
+    "name": "University of Notre Dame",
+    "isActive": true,
+    "activeName": "University of Notre Dame"
+  },
+  {
+    "name": "University of Oregon",
+    "isActive": false
+  },
+  {
+    "name": "University of Pennsylvania",
+    "isActive": true,
+    "activeName": "University of Pennsylvania"
+  },
+  {
+    "name": "University of Pittsburgh",
+    "isActive": false
+  },
+  {
+    "name": "University of Portland",
+    "isActive": false
+  },
+  {
+    "name": "University of Puget Sound",
+    "isActive": false
+  },
+  {
+    "name": "University of Redlands",
+    "isActive": false
+  },
+  {
+    "name": "University of Rhode Island",
+    "isActive": false
+  },
+  {
+    "name": "University of Richmond",
+    "isActive": false
+  },
+  {
+    "name": "University of Rochester",
+    "isActive": false
+  },
+  {
+    "name": "University of Saint Joseph",
+    "isActive": false
+  },
+  {
+    "name": "University of Saint Katherine",
+    "isActive": false
+  },
+  {
+    "name": "University of San Diego",
+    "isActive": false
+  },
+  {
+    "name": "University of San Francisco",
+    "isActive": false
+  },
+  {
+    "name": "University of South Alabama",
+    "isActive": false
+  },
+  {
+    "name": "University of South Carolina Columbia",
+    "isActive": false
+  },
+  {
+    "name": "University of South Dakota",
+    "isActive": false
+  },
+  {
+    "name": "University of South Florida",
+    "isActive": false
+  },
+  {
+    "name": "University of Southern California",
+    "isActive": true,
+    "activeName": "USC"
+  },
+  {
+    "name": "University of Southern Maine",
+    "isActive": false
+  },
+  {
+    "name": "University of Southern Mississippi",
+    "isActive": false
+  },
+  {
+    "name": "University of St. Francis",
+    "isActive": false
+  },
+  {
+    "name": "University of St. Thomas",
+    "isActive": false
+  },
+  {
+    "name": "University of Tampa",
+    "isActive": false
+  },
+  {
+    "name": "University of Texas at Arlington",
+    "isActive": false
+  },
+  {
+    "name": "University of Texas at Austin",
+    "isActive": false
+  },
+  {
+    "name": "University of Texas at Dallas",
+    "isActive": false
+  },
+  {
+    "name": "University of Texas at San Antonio",
+    "isActive": false
+  },
+  {
+    "name": "University of the Incarnate Word",
+    "isActive": false
+  },
+  {
+    "name": "University of the Pacific",
+    "isActive": false
+  },
+  {
+    "name": "University of the West",
+    "isActive": false
+  },
+  {
+    "name": "University of Utah",
+    "isActive": false
+  },
+  {
+    "name": "University of Vermont",
+    "isActive": false
+  },
+  {
+    "name": "University of Virginia",
+    "isActive": true,
+    "activeName": "University of Virginia (UVA)"
+  },
+  {
+    "name": "University of Virginia (UVA)",
+    "isActive": true,
+    "activeName": "University of Virginia (UVA)"
+  },
+  {
+    "name": "University of West Florida",
+    "isActive": false
+  },
+  {
+    "name": "University of Wisconsin—Eau Claire",
+    "isActive": false
+  },
+  {
+    "name": "University of Wisconsin—Madison",
+    "isActive": false
+  },
+  {
+    "name": "University of Wisconsin—Milwaukee",
+    "isActive": false
+  },
+  {
+    "name": "University of Wisconsin—River Falls",
+    "isActive": false
+  },
+  {
+    "name": "University of Wisconsin—Stevens Point",
+    "isActive": false
+  },
+  {
+    "name": "University of Wisconsin—Stout",
+    "isActive": false
+  },
+  {
+    "name": "University of Wisconsin—Whitewater",
+    "isActive": false
+  },
+  {
+    "name": "University of Wyoming",
+    "isActive": false
+  },
+  {
+    "name": "Upper Iowa University",
+    "isActive": false
+  },
+  {
+    "name": "Ursinus College",
+    "isActive": false
+  },
+  {
+    "name": "Ursuline College",
+    "isActive": false
+  },
+  {
+    "name": "Utica College",
+    "isActive": false
+  },
+  {
+    "name": "Valparaiso University",
+    "isActive": false
+  },
+  {
+    "name": "Vanderbilt University",
+    "isActive": true,
+    "activeName": "Vanderbilt"
+  },
+  {
+    "name": "Vassar College",
+    "isActive": false
+  },
+  {
+    "name": "Vaughn College of Aeronautics and Technology",
+    "isActive": false
+  },
+  {
+    "name": "Villa Maria College",
+    "isActive": false
+  },
+  {
+    "name": "Villanova University",
+    "isActive": false
+  },
+  {
+    "name": "Vincennes University",
+    "isActive": false
+  },
+  {
+    "name": "Virginia Commonwealth University",
+    "isActive": false
+  },
+  {
+    "name": "Virginia Tech",
+    "isActive": false
+  },
+  {
+    "name": "Wabash College",
+    "isActive": false
+  },
+  {
+    "name": "Wagner College",
+    "isActive": false
+  },
+  {
+    "name": "Wake Forest University",
+    "isActive": false
+  },
+  {
+    "name": "Walsh University",
+    "isActive": false
+  },
+  {
+    "name": "Warner Pacific University",
+    "isActive": false
+  },
+  {
+    "name": "Warren Wilson College",
+    "isActive": false
+  },
+  {
+    "name": "Wartburg College",
+    "isActive": false
+  },
+  {
+    "name": "Washington & Jefferson College",
+    "isActive": false
+  },
+  {
+    "name": "Washington and Lee University",
+    "isActive": false
+  },
+  {
+    "name": "Washington College",
+    "isActive": false
+  },
+  {
+    "name": "Washington State University",
+    "isActive": false
+  },
+  {
+    "name": "Washington University in St. Louis",
+    "isActive": true,
+    "activeName": "Washington University in St. Louis (WashU)"
+  },
+  {
+    "name": "Wayne State University",
+    "isActive": false
+  },
+  {
+    "name": "Webb Institute",
+    "isActive": false
+  },
+  {
+    "name": "Webber International University",
+    "isActive": false
+  },
+  {
+    "name": "Webster University",
+    "isActive": false
+  },
+  {
+    "name": "Wellesley College",
+    "isActive": false
+  },
+  {
+    "name": "Wells College",
+    "isActive": false
+  },
+  {
+    "name": "Wentworth Institute of Technology",
+    "isActive": false
+  },
+  {
+    "name": "Wesleyan College",
+    "isActive": false
+  },
+  {
+    "name": "Wesleyan University",
+    "isActive": false
+  },
+  {
+    "name": "West Chester University of Pennsylvania",
+    "isActive": false
+  },
+  {
+    "name": "West Virginia University",
+    "isActive": false
+  },
+  {
+    "name": "West Virginia Wesleyan College",
+    "isActive": false
+  },
+  {
+    "name": "Western Carolina University",
+    "isActive": false
+  },
+  {
+    "name": "Western Colorado University",
+    "isActive": false
+  },
+  {
+    "name": "Western Connecticut State University",
+    "isActive": false
+  },
+  {
+    "name": "Western Illinois University",
+    "isActive": false
+  },
+  {
+    "name": "Western Michigan University",
+    "isActive": false
+  },
+  {
+    "name": "Western New England University",
+    "isActive": false
+  },
+  {
+    "name": "Westminster College",
+    "isActive": false
+  },
+  {
+    "name": "Westmont College",
+    "isActive": false
+  },
+  {
+    "name": "Wheaton College",
+    "isActive": false
+  },
+  {
+    "name": "Wheeling University",
+    "isActive": false
+  },
+  {
+    "name": "Whitman College",
+    "isActive": false
+  },
+  {
+    "name": "Whittier College",
+    "isActive": false
+  },
+  {
+    "name": "Whitworth University",
+    "isActive": false
+  },
+  {
+    "name": "Wichita State University",
+    "isActive": false
+  },
+  {
+    "name": "Widener University",
+    "isActive": false
+  },
+  {
+    "name": "Wilkes Honors College of FAU",
+    "isActive": false
+  },
+  {
+    "name": "Wilkes University",
+    "isActive": false
+  },
+  {
+    "name": "Willamette University",
+    "isActive": false
+  },
+  {
+    "name": "William Jewell College",
+    "isActive": false
+  },
+  {
+    "name": "William Paterson University of NJ",
+    "isActive": false
+  },
+  {
+    "name": "William Woods University",
+    "isActive": false
+  },
+  {
+    "name": "Williams College",
+    "isActive": false
+  },
+  {
+    "name": "Wilmington College",
+    "isActive": false
+  },
+  {
+    "name": "Wilson College",
+    "isActive": false
+  },
+  {
+    "name": "Wingate University",
+    "isActive": false
+  },
+  {
+    "name": "Winthrop University",
+    "isActive": false
+  },
+  {
+    "name": "Wisconsin Lutheran College",
+    "isActive": false
+  },
+  {
+    "name": "Wittenberg University",
+    "isActive": false
+  },
+  {
+    "name": "Wofford College",
+    "isActive": false
+  },
+  {
+    "name": "Woodbury University",
+    "isActive": false
+  },
+  {
+    "name": "Worcester Polytechnic Institute",
+    "isActive": false
+  },
+  {
+    "name": "Worcester State University",
+    "isActive": false
+  },
+  {
+    "name": "Wright State University",
+    "isActive": false
+  },
+  {
+    "name": "Xavier University",
+    "isActive": false
+  },
+  {
+    "name": "Xavier University of Louisiana",
+    "isActive": false
+  },
+  {
+    "name": "Yale University",
+    "isActive": true,
+    "activeName": "Yale"
+  },
+  {
+    "name": "York College of Pennsylvania",
+    "isActive": false
+  },
+  {
+    "name": "Zaytuna College",
+    "isActive": false
+  }
+]

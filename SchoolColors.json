@@ -1,0 +1,152 @@
+[
+    {
+        "school": "Princeton University",
+        "background_color_hex": "#E77500",
+        "text_color_hex": "#000000"
+    },
+    {
+        "school": "Massachusetts Institute of Technology (MIT)",
+        "background_color_hex": "#750014",
+        "text_color_hex": "#FFFFFF"
+    },
+    {
+        "school": "Harvard University",
+        "background_color_hex": "#A51C30",
+        "text_color_hex": "#FFFFFF"
+    },
+    {
+        "school": "Stanford University",
+        "background_color_hex": "#8C1515",
+        "text_color_hex": "#FFFFFF"
+    },
+    {
+        "school": "Yale University",
+        "background_color_hex": "#00356B",
+        "text_color_hex": "#FFFFFF"
+    },
+    {
+        "school": "University of Chicago",
+        "background_color_hex": "#800000",
+        "text_color_hex": "#FFFFFF"
+    },
+    {
+        "school": "Duke University",
+        "background_color_hex": "#012169",
+        "text_color_hex": "#FFFFFF"
+    },
+    {
+        "school": "Johns Hopkins University",
+        "background_color_hex": "#002D72",
+        "text_color_hex": "#FFFFFF"
+    },
+    {
+        "school": "Northwestern University",
+        "background_color_hex": "#4E2A84",
+        "text_color_hex": "#FFFFFF"
+    },
+    {
+        "school": "University of Pennsylvania",
+        "background_color_hex": "#990000",
+        "text_color_hex": "#FFFFFF"
+    },
+    {
+        "school": "California Institute of Technology (Caltech)",
+        "background_color_hex": "#FF6C0C",
+        "text_color_hex": "#FFFFFF"
+    },
+    {
+        "school": "Cornell University",
+        "background_color_hex": "#B31B1B",
+        "text_color_hex": "#FFFFFF"
+    },
+    {
+        "school": "Brown University",
+        "background_color_hex": "#4E3629",
+        "text_color_hex": "#FFFFFF"
+    },
+    {
+        "school": "Dartmouth College",
+        "background_color_hex": "#00693E",
+        "text_color_hex": "#FFFFFF"
+    },
+    {
+        "school": "Columbia University",
+        "background_color_hex": "#B9D9EB",
+        "text_color_hex": "#000000"
+    },
+    {
+        "school": "University of California, Berkeley",
+        "background_color_hex": "#003262",
+        "text_color_hex": "#FDB515"
+    },
+    {
+        "school": "Rice University",
+        "background_color_hex": "#00205B",
+        "text_color_hex": "#FFFFFF"
+    },
+    {
+        "school": "University of California, Los Angeles (UCLA)",
+        "background_color_hex": "#2774AE",
+        "text_color_hex": "#FFD100"
+    },
+    {
+        "school": "Vanderbilt University",
+        "background_color_hex": "#1C1C1C",
+        "text_color_hex": "#CFAE70"
+    },
+    {
+        "school": "Carnegie Mellon University",
+        "background_color_hex": "#C41230",
+        "text_color_hex": "#FFFFFF"
+    },
+    {
+        "school": "University of Michigan",
+        "background_color_hex": "#00274C",
+        "text_color_hex": "#FFCB05"
+    },
+    {
+        "school": "University of Notre Dame",
+        "background_color_hex": "#0C2340",
+        "text_color_hex": "#AE9142"
+    },
+    {
+        "school": "Washington University in St. Louis",
+        "background_color_hex": "#BA0C2F",
+        "text_color_hex": "#FFFFFF"
+    },
+    {
+        "school": "Emory University",
+        "background_color_hex": "#002878",
+        "text_color_hex": "#FFFFFF"
+    },
+    {
+        "school": "Georgetown University",
+        "background_color_hex": "#041E42",
+        "text_color_hex": "#FFFFFF"
+    },
+    {
+        "school": "University of North Carolina at Chapel Hill",
+        "background_color_hex": "#13294B",
+        "text_color_hex": "#4B9CD3"
+    },
+    {
+        "school": "University of Virginia",
+        "background_color_hex": "#232D4B",
+        "text_color_hex": "#E57200"
+    },
+    {
+        "school": "University of Southern California (USC)",
+        "background_color_hex": "#990000",
+        "text_color_hex": "#FFCC00"
+    },
+    {
+        "school": "University of California, San Diego (UC San Diego)",
+        "background_color_hex": "#182B49",
+        "text_color_hex": "#FFCD00"
+    },
+    {
+        "school": "University of Florida",
+        "background_color_hex": "#0021A5",
+        "text_color_hex": "#FA4616"
+    }
+]

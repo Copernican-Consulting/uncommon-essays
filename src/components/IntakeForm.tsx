@@ -121,8 +121,6 @@ export function IntakeForm({ onTextUpdate }: IntakeFormProps) {
                     >
                         or paste essay manually
                     </button>
-                    {/* Debug info for file type */}
-                    <p className="text-[10px] text-slate-400 mt-4">Debug: PDF/Docx/Txt supported</p>
                 </div>
             ) : (
                 <div className="relative">

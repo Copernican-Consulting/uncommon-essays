@@ -7,7 +7,7 @@ const supabaseAdmin = createClient(
     process.env.SUPABASE_SECRET_KEY!
 )
 
-const DAILY_CREDIT_LIMIT = 5
+const DAILY_CREDIT_LIMIT = 99
 
 export async function getUserCredits(userId: string) {
     // Try to get existing credits
@@ -72,4 +72,20 @@ export async function deductCredit(userId: string) {
 
     if (error) throw error
     return true
+}
+export async function addCredits(userId: string, amount: number) {
+    const credits = await getUserCredits(userId)
+
+    const { data, error } = await supabaseAdmin
+        .from('user_credits')
+        .update({
+            credits_remaining: credits.credits_remaining + amount,
+            updated_at: new Date().toISOString()
+        })
+        .eq('user_id', userId)
+        .select()
+        .single()
+
+    if (error) throw error
+    return data
 }

@@ -2,13 +2,18 @@
 
 import { useState, useRef } from 'react'
 import { useAuth } from '@/contexts/AuthContext'
-import { LogOut, User, Coins } from 'lucide-react'
+import { LogOut, User, Coins, Sparkles } from 'lucide-react'
 import { useOnClickOutside } from '@/hooks/useOnClickOutside'
 import { cn } from '@/lib/utils'
 import { createClient } from '@/lib/supabase/client'
 import { useEffect } from 'react'
 
-export default function UserMenu() {
+interface UserMenuProps {
+    onOpenCredits?: () => void
+    refreshKey?: number
+}
+
+export default function UserMenu({ onOpenCredits, refreshKey = 0 }: UserMenuProps) {
     const { user, signOut } = useAuth()
     const [isOpen, setIsOpen] = useState(false)
     const [credits, setCredits] = useState<number | null>(null)
@@ -21,7 +26,7 @@ export default function UserMenu() {
         if (user) {
             fetchCredits()
         }
-    }, [user])
+    }, [user, refreshKey])
 
     const fetchCredits = async () => {
         const { data, error } = await supabase
@@ -64,39 +69,46 @@ export default function UserMenu() {
                     {getInitials()}
                 </div>
                 <div className="hidden sm:block text-left">
-                    <div className="text-sm font-medium text-slate-900">
-                        {user.user_metadata?.full_name || user.email}
+                    <div className="text-sm font-medium text-slate-900 leading-tight">
+                        {user.user_metadata?.full_name || user.email?.split('@')[0]}
                     </div>
-                    <div className="text-xs text-slate-500 flex items-center gap-1">
-                        <Coins className="w-3 h-3" />
-                        <span>{credits !== null ? `${credits} credits` : 'Loading...'}</span>
+                    <div className="text-[10px] text-slate-500 flex items-center gap-1 font-bold uppercase tracking-wider">
+                        <Coins className="w-2.5 h-2.5 text-amber-500" />
+                        <span>{credits !== null ? `${credits} credits` : '...'}</span>
                     </div>
                 </div>
             </button>
 
             {isOpen && (
-                <div className="absolute right-0 mt-2 w-64 bg-white rounded-xl shadow-lg border border-slate-200 py-2 z-50">
-                    <div className="px-4 py-3 border-b border-slate-200">
-                        <div className="font-medium text-slate-900">{user.user_metadata?.full_name || 'User'}</div>
-                        <div className="text-sm text-slate-500">{user.email}</div>
+                <div className="absolute right-0 mt-2 w-64 bg-white rounded-xl shadow-2xl border border-slate-200 py-2 z-[200]">
+                    <div className="px-4 py-3 border-b border-slate-100">
+                        <div className="font-bold text-slate-900">{user.user_metadata?.full_name || 'User'}</div>
+                        <div className="text-xs text-slate-500 truncate">{user.email}</div>
                     </div>
 
-                    <div className="px-4 py-3 border-b border-slate-200">
-                        <div className="flex items-center justify-between">
-                            <span className="text-sm text-slate-600">Daily Credits</span>
-                            <div className="flex items-center gap-1 font-medium text-primary">
-                                <Coins className="w-4 h-4" />
+                    <div className="px-4 py-3 border-b border-slate-100 bg-slate-50/50">
+                        <div className="flex items-center justify-between mb-2">
+                            <span className="text-xs font-bold text-slate-400 uppercase tracking-widest">Balance</span>
+                            <div className="flex items-center gap-1 font-bold text-primary">
+                                <Coins className="w-4 h-4 text-amber-500" />
                                 <span>{credits ?? '...'}</span>
                             </div>
                         </div>
-                        <div className="text-xs text-slate-500 mt-1">
-                            Resets daily at midnight
-                        </div>
+                        <button
+                            onClick={() => {
+                                onOpenCredits?.()
+                                setIsOpen(false)
+                            }}
+                            className="w-full py-1.5 px-3 bg-white border border-slate-200 rounded-lg text-xs font-bold text-slate-600 hover:border-primary hover:text-primary transition-all flex items-center justify-center gap-2"
+                        >
+                            <Sparkles className="w-3 h-3 text-amber-500" />
+                            Buy More Credits
+                        </button>
                     </div>
 
                     <button
                         onClick={handleSignOut}
-                        className="w-full px-4 py-2 text-left text-sm text-red-600 hover:bg-red-50 transition-colors flex items-center gap-2"
+                        className="w-full px-4 py-2.5 text-left text-sm text-slate-600 hover:bg-red-50 hover:text-red-600 transition-colors flex items-center gap-2"
                     >
                         <LogOut className="w-4 h-4" />
                         Sign Out

@@ -10,10 +10,12 @@ interface ReviewBoardProps {
     essayText: string;
     results: any[];
     onBack: () => void;
+    onRetry?: (schoolName: string) => void;
 }
 
-export function ReviewBoard({ essayText, results, onBack }: ReviewBoardProps) {
-    const [activeSchool, setActiveSchool] = useState<string>(results[0]?.schoolName);
+export function ReviewBoard({ essayText, results, onBack, onRetry }: ReviewBoardProps) {
+    const firstSuccess = results.find(r => r.status !== 'error')?.schoolName;
+    const [activeSchool, setActiveSchool] = useState<string>(firstSuccess || results[0]?.schoolName);
     const [activeAnnotationId, setActiveAnnotationId] = useState<string | null>(null);
 
     // Assign colors to schools
@@ -34,14 +36,16 @@ export function ReviewBoard({ essayText, results, onBack }: ReviewBoardProps) {
     }, [results]);
 
     const allAnnotations = useMemo(() => {
-        return results.flatMap(r =>
-            r.annotations.map((a: any, i: number) => ({
-                ...a,
-                id: `${r.schoolName}-${i}`,
-                schoolName: r.schoolName,
-                color: schoolColors[r.schoolName]
-            }))
-        );
+        return results
+            .filter(r => r.status !== 'error')
+            .flatMap(r =>
+                r.annotations.map((a: any, i: number) => ({
+                    ...a,
+                    id: `${r.schoolName}-${i}`,
+                    schoolName: r.schoolName,
+                    color: schoolColors[r.schoolName]
+                }))
+            );
     }, [results, schoolColors]);
 
     return (
@@ -49,7 +53,7 @@ export function ReviewBoard({ essayText, results, onBack }: ReviewBoardProps) {
             <div className="flex justify-between items-center mb-6">
                 <div className="flex items-center gap-4">
                     <Button variant="ghost" size="sm" onClick={onBack}>
-                        <ChevronLeft className="w-4 h-4 mr-1" /> Back to Studio
+                        <ChevronLeft className="w-4 h-4 mr-1" /> Home
                     </Button>
                     <h2 className="text-xl font-serif font-bold text-slate-800">Admissions Review</h2>
                 </div>
@@ -58,7 +62,7 @@ export function ReviewBoard({ essayText, results, onBack }: ReviewBoardProps) {
                         <Download className="w-4 h-4 mr-2" /> Save as PDF
                     </Button>
                     <Button variant="outline" size="sm" onClick={onBack}>
-                        <RotateCcw className="w-4 h-4 mr-2" /> Re-run Simulation
+                        <RotateCcw className="w-4 h-4 mr-2" /> Start Over
                     </Button>
                 </div>
             </div>
@@ -86,6 +90,7 @@ export function ReviewBoard({ essayText, results, onBack }: ReviewBoardProps) {
                         activeSchool={activeSchool}
                         setActiveSchool={setActiveSchool}
                         activeAnnotationId={activeAnnotationId}
+                        onRetry={onRetry}
                         onAnnotationClick={(id, school) => {
                             setActiveAnnotationId(id);
                             setActiveSchool(school);

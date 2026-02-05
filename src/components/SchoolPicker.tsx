@@ -3,7 +3,7 @@
 import { useState, useMemo, useRef } from 'react';
 import { Check, ChevronsUpDown, Search, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import schoolsData from '@/lib/data/schools.json';
+import allSchoolsList from '@/lib/data/all_schools_list.json';
 import { useOnClickOutside } from '@/hooks/useOnClickOutside';
 
 interface SchoolPickerProps {
@@ -20,8 +20,9 @@ export function SchoolPicker({ selected, onChange, max = 5 }: SchoolPickerProps)
     useOnClickOutside(ref, () => setIsOpen(false));
 
     const filteredSchools = useMemo(() => {
-        return schoolsData.filter(school =>
-            school.name.toLowerCase().includes(search.toLowerCase()) &&
+        const lowerSearch = search.toLowerCase();
+        return allSchoolsList.filter(school =>
+            school.name.toLowerCase().includes(lowerSearch) &&
             !selected.includes(school.name)
         );
     }, [search, selected]);
@@ -60,22 +61,38 @@ export function SchoolPicker({ selected, onChange, max = 5 }: SchoolPickerProps)
                                 className="w-full px-3 py-2 text-sm bg-slate-50 border-none focus:ring-0 rounded-lg"
                             />
                         </div>
-                        <div className="max-h-60 overflow-y-auto p-1">
+                        <div className="max-h-60 overflow-y-auto p-1 text-slate-900">
                             {filteredSchools.length > 0 ? (
                                 filteredSchools.map((school) => (
                                     <button
                                         key={school.name}
+                                        disabled={!school.isActive}
                                         onClick={() => {
-                                            toggleSchool(school.name);
+                                            if (!school.isActive) return;
+                                            toggleSchool((school as any).activeName || school.name);
                                             setSearch("");
                                             if (selected.length + 1 >= max) setIsOpen(false);
                                         }}
-                                        className="w-full text-left px-3 py-2.5 text-sm hover:bg-primary/5 hover:text-primary rounded-lg transition-colors flex items-center justify-between group"
+                                        className={cn(
+                                            "w-full text-left px-3 py-2.5 text-sm rounded-lg transition-colors flex items-center justify-between group",
+                                            school.isActive
+                                                ? "hover:bg-primary/5 hover:text-primary"
+                                                : "opacity-60 cursor-not-allowed bg-slate-50/50"
+                                        )}
                                     >
-                                        {school.name}
-                                        <div className="opacity-0 group-hover:opacity-100 transition-opacity">
-                                            <Check className="w-4 h-4" />
-                                        </div>
+                                        <span className="flex items-center gap-2">
+                                            {school.name}
+                                            {!school.isActive && (
+                                                <span className="text-[9px] font-bold text-slate-400 uppercase tracking-widest bg-slate-100 px-1.5 py-0.5 rounded">
+                                                    Coming Soon
+                                                </span>
+                                            )}
+                                        </span>
+                                        {school.isActive && (
+                                            <div className="opacity-0 group-hover:opacity-100 transition-opacity">
+                                                <Check className="w-4 h-4" />
+                                            </div>
+                                        )}
                                     </button>
                                 ))
                             ) : (
@@ -92,7 +109,7 @@ export function SchoolPicker({ selected, onChange, max = 5 }: SchoolPickerProps)
                         key={schoolName}
                         className="flex items-center gap-2 px-3 py-1.5 bg-primary/10 text-primary border border-primary/20 rounded-full text-sm font-medium animate-in slide-in-from-left-2 duration-200"
                     >
-                        {schoolName}
+                        {schoolName.replace(/\s*\(.*?\)\s*$/, '').trim()}
                         <button
                             onClick={() => toggleSchool(schoolName)}
                             className="p-0.5 hover:bg-primary/20 rounded-full transition-colors"
