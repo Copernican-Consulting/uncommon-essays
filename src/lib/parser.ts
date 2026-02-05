@@ -35,7 +35,7 @@ export async function parseFile(file: Buffer, mimeType: string): Promise<string>
 
             // Lazy load pdf-parse strictly inside the function
             // @ts-ignore
-            const pdfModule = await import('pdf-parse');
+            const pdfModule = (await import('pdf-parse')) as any;
 
             console.error('PDF Module Loaded Keys:', Object.keys(pdfModule));
             console.error('PDF Module.default type:', typeof pdfModule.default);
