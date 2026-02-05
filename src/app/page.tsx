@@ -5,11 +5,15 @@ import { IntakeForm } from '@/components/IntakeForm';
 import { SchoolPicker } from '@/components/SchoolPicker';
 import { ReviewBoard } from '@/components/ReviewBoard';
 import { Button } from '@/components/ui/Button';
-import { Loader2 } from 'lucide-react';
+import { Loader2, LogIn } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useOnClickOutside } from '@/hooks/useOnClickOutside';
+import { useAuth } from '@/contexts/AuthContext';
+import LoginModal from '@/components/auth/LoginModal';
+import UserMenu from '@/components/auth/UserMenu';
 
 export default function Home() {
+  const { user, loading } = useAuth();
   const [essayText, setEssayText] = useState("");
   const [selectedSchools, setSelectedSchools] = useState<string[]>([]);
   const [isSimulating, setIsSimulating] = useState(false);
@@ -18,6 +22,7 @@ export default function Home() {
   const [selectedTone, setSelectedTone] = useState("");
   const [scoringModel, setScoringModel] = useState("standard");
   const [showSettings, setShowSettings] = useState(false);
+  const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
   const [errorDetails, setErrorDetails] = useState<any>(null);
   const [showDebug, setShowDebug] = useState(false);
   const settingsRef = useRef<HTMLDivElement>(null);
@@ -31,6 +36,10 @@ export default function Home() {
   ];
 
   const handleSimulate = async () => {
+    if (!user) {
+      setIsLoginModalOpen(true);
+      return;
+    }
     if (!essayText || selectedSchools.length === 0) return;
 
     setIsSimulating(true);
@@ -69,6 +78,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <header className="flex justify-between items-center mb-8">
             <h1 className="text-3xl font-serif font-bold text-slate-900">Uncommon Essays</h1>
+            <UserMenu />
           </header>
           <ReviewBoard
             essayText={essayText}
@@ -84,7 +94,21 @@ export default function Home() {
     <main className="min-h-screen bg-slate-50 p-8">
       <div className="max-w-4xl mx-auto mt-12">
         <header className="text-center mb-12 relative">
-          <div className="absolute top-0 right-0">
+          <div className="absolute top-0 right-0 flex items-center gap-4">
+            {user ? (
+              <UserMenu />
+            ) : (
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => setIsLoginModalOpen(true)}
+                className="text-slate-600 font-medium flex items-center gap-2 hover:bg-slate-100 px-3 py-2 rounded-lg transition-colors"
+                disabled={loading}
+              >
+                <LogIn className="w-4 h-4" />
+                Sign In
+              </Button>
+            )}
             <div className="relative" ref={settingsRef}>
               <Button
                 variant="ghost"
@@ -208,17 +232,35 @@ export default function Home() {
             </div>
 
             {errorDetails && (
-              <div className="mt-8 p-4 bg-red-50 border border-red-200 rounded-xl">
+              <div className={cn(
+                "mt-8 p-4 rounded-xl border",
+                errorDetails.error === "Insufficient credits"
+                  ? "bg-amber-50 border-amber-200"
+                  : "bg-red-50 border-red-200"
+              )}>
                 <div className="flex justify-between items-start mb-2">
-                  <p className="text-red-700 font-medium font-sans">Simulation Failed</p>
+                  <p className={cn(
+                    "font-medium font-sans",
+                    errorDetails.error === "Insufficient credits" ? "text-amber-700" : "text-red-700"
+                  )}>
+                    {errorDetails.error === "Insufficient credits" ? "Out of Credits" : "Simulation Failed"}
+                  </p>
                   <button
                     onClick={() => setShowDebug(!showDebug)}
-                    className="text-xs text-red-500 hover:text-red-700 underline font-mono"
+                    className={cn(
+                      "text-xs underline font-mono",
+                      errorDetails.error === "Insufficient credits" ? "text-amber-500 hover:text-amber-700" : "text-red-500 hover:text-red-700"
+                    )}
                   >
                     {showDebug ? "Hide Debug" : "Show Debug"}
                   </button>
                 </div>
-                <p className="text-sm text-red-600 font-sans">{errorDetails.error}</p>
+                <p className={cn(
+                  "text-sm font-sans",
+                  errorDetails.error === "Insufficient credits" ? "text-amber-600" : "text-red-600"
+                )}>
+                  {errorDetails.message || errorDetails.error}
+                </p>
                 {showDebug && (
                   <pre className="mt-4 p-4 bg-slate-900 text-slate-300 text-[10px] overflow-auto rounded-lg max-h-64 font-mono text-left">
                     {JSON.stringify(errorDetails, null, 2)}
@@ -229,6 +271,11 @@ export default function Home() {
           </div>
         </section>
       </div>
+
+      <LoginModal
+        isOpen={isLoginModalOpen}
+        onClose={() => setIsLoginModalOpen(false)}
+      />
     </main>
   );
 }

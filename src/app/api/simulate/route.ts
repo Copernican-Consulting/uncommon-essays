@@ -10,10 +10,37 @@ const openrouter = createOpenAI({
     apiKey: process.env.OPENROUTER_API_KEY,
 });
 
+import { createClient } from '@/lib/supabase/server';
+import { deductCredit } from '@/lib/credits';
+
 export async function POST(req: NextRequest) {
     try {
+        const supabase = await createClient();
+        const { data: { user } } = await supabase.auth.getUser();
+
+        if (!user) {
+            return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+        }
+
         const { essayText, schoolIds, modelId, tone, scoringModel } = await req.json();
         const selectedModel = modelId || 'openai/gpt-4o'; // Default
+
+        // Enforce credit check
+        try {
+            await deductCredit(user.id);
+        } catch (creditError: any) {
+            console.error('Credit deduction error:', creditError);
+
+            if (creditError.message === 'Insufficient credits') {
+                return NextResponse.json({
+                    error: 'Insufficient credits',
+                    message: 'You have run out of daily credits.'
+                }, { status: 403 });
+            }
+
+            // Re-throw if it's a system error (like Invalid API key)
+            throw creditError;
+        }
 
         console.log('Simulate request:', { essayTextLength: essayText?.length, schoolIds, selectedModel, tone, scoringModel });
 
